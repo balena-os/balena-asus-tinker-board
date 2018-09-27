@@ -12,9 +12,9 @@ BBLAYERS ?= " \
     ${TOPDIR}/../layers/meta-openembedded/meta-filesystems \
     ${TOPDIR}/../layers/meta-openembedded/meta-networking \
     ${TOPDIR}/../layers/meta-openembedded/meta-python \
-    ${TOPDIR}/../layers/meta-rockchip \
+    ${TOPDIR}/../layers/meta-tinker-board \
     ${TOPDIR}/../layers/meta-resin/meta-resin-common \
-    ${TOPDIR}/../layers/meta-resin/meta-resin-rocko \
+    ${TOPDIR}/../layers/meta-resin/meta-resin-sumo \
     ${TOPDIR}/../layers/meta-resin-asus-tinker-board \
     ${TOPDIR}/../layers/meta-rust \
     "
