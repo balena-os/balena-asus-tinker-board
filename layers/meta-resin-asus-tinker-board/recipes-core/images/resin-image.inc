@@ -1,8 +1,8 @@
-IMAGE_FSTYPES_append_tinker-rk3288 = " resinos-img"
+IMAGE_FSTYPES_append = " resinos-img"
 
 IDBLOADER = "idbloader.img"
 
-IMAGE_CMD_resinos-img_append_tinker-rk3288 () {
+IMAGE_CMD_resinos-img_append () {
     dd conv=notrunc,fsync if=${DEPLOY_DIR_IMAGE}/${IDBLOADER} of=${RESIN_RAW_IMG} bs=512 seek=64
 }
 
