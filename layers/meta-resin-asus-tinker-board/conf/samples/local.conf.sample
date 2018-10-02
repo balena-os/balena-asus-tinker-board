@@ -1,5 +1,6 @@
 # Supported machines
-#MACHINE ?= "tinker-rk3288"
+#MACHINE ?= "asus-tinker-board"
+#MACHINE ?= "asus-tinker-board-s"
 
 BALENA_STORAGE = "overlay2"
 
