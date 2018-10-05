@@ -1,4 +1,16 @@
 - commits:
+    - subject: Sumo update
+      hash: 5e171fa6f5016d52163163e055f5341f23562228
+      body: ''
+      footer:
+        Changelog-entry: Sumo update
+        changelog-entry: Sumo update
+        Signed-off-by: Vicentiu Galanopulo <vicentiu@resin.io>
+        signed-off-by: Vicentiu Galanopulo <vicentiu@resin.io>
+      author: Vicentiu Galanopulo
+  version: 2.19.0+rev4
+  date: 2018-10-05T10:00:01.009Z
+- commits:
     - subject: Add IMAGE_BOOTLOADER for do_rootfs of resin-image
       hash: 97dc4dfd3b3decf1e24885ae9a62f8f31eb68cd0
       body: |
