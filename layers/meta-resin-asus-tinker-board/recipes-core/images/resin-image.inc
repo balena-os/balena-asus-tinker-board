@@ -1,11 +1,10 @@
 IMAGE_FSTYPES_append = " resinos-img"
 
-IDBLOADER = "idbloader.img"
-
 IMAGE_CMD_resinos-img_append () {
-    dd conv=notrunc,fsync if=${DEPLOY_DIR_IMAGE}/${IDBLOADER} of=${RESIN_RAW_IMG} bs=512 seek=64
+    dd conv=notrunc,fsync if=${DEPLOY_DIR_IMAGE}/idbloader.img of=${RESIN_RAW_IMG} bs=512 seek=64
 }
 
+RESIN_IMAGE_BOOTLOADER = "u-boot-tinker-board"
 RESIN_BOOT_PARTITION_FILES_append = " \
     zImage${KERNEL_INITRAMFS}-${MACHINE}.bin:/zImage \
     zImage-${KERNEL_DEVICETREE}:/rk3288-miniarm.dtb \
