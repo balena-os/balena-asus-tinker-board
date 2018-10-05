@@ -1,6 +1,17 @@
 Change log
 -----------
 
+# v2.19.0+rev2
+## (2018-10-04)
+
+* Updated to latest sumo [Vicentiu Galanopulo]
+* Update to sumo [Vicentiu Galanopulo]
+* Update of machine name [Vicentiu Galanopulo]
+* Inherit kernel-resin [Vicentiu Galanopulo]
+* Add resin-u-boot integration [Vicentiu Galanopulo]
+* Switch bsp layer to meta-tinker-board [Vicentiu Galanopulo]
+* Switch to sumo-19.0.1 [Vicentiu Galanopulo]
+
 # v2.19.0+rev1
 ## (2018-09-26)
 

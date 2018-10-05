@@ -1,4 +1,72 @@
 - commits:
+    - subject: Updated to latest sumo
+      hash: 75ab311127be1c5583cdf499bfec5e47a75ceee0
+      body: |
+        The updated layer contains firmware and a recipe
+        for enabling bluetooth
+      footer:
+        Changelog-entry: Updated to latest sumo
+        changelog-entry: Updated to latest sumo
+        Signed-off-by: Vicentiu Galanopulo <vicentiu@resin.io>
+        signed-off-by: Vicentiu Galanopulo <vicentiu@resin.io>
+      author: Vicentiu Galanopulo
+    - subject: Update to sumo
+      hash: e96aafdefea9d3b916a6e22f1e1d79579a229451
+      body: ''
+      footer:
+        Changelog-entry: Update to sumo
+        changelog-entry: Update to sumo
+        Signed-off-by: Vicentiu Galanopulo <vicentiu@resin.io>
+        signed-off-by: Vicentiu Galanopulo <vicentiu@resin.io>
+      author: Vicentiu Galanopulo
+    - subject: Update of machine name
+      hash: 5b7c239654b2e35f5ff440ac27a628bdfa6eca46
+      body: ''
+      footer:
+        Changelog-entry: Update of machine name
+        changelog-entry: Update of machine name
+        Signed-off-by: Vicentiu Galanopulo <vicentiu@resin.io>
+        signed-off-by: Vicentiu Galanopulo <vicentiu@resin.io>
+      author: Vicentiu Galanopulo
+    - subject: Inherit kernel-resin
+      hash: 504f9ad141fa6d9446b4a30891130581315c4840
+      body: ''
+      footer:
+        Changelog-entry: Inherit kernel-resin
+        changelog-entry: Inherit kernel-resin
+        Signed-off-by: Vicentiu Galanopulo <vicentiu@resin.io>
+        signed-off-by: Vicentiu Galanopulo <vicentiu@resin.io>
+      author: Vicentiu Galanopulo
+    - subject: Add resin-u-boot integration
+      hash: f1d69647cb1973f5343f75656ffac93dfc7523f3
+      body: ''
+      footer:
+        Changelog-entry: Add resin-u-boot integration
+        changelog-entry: Add resin-u-boot integration
+        Signed-off-by: Vicentiu Galanopulo <vicentiu@resin.io>
+        signed-off-by: Vicentiu Galanopulo <vicentiu@resin.io>
+      author: Vicentiu Galanopulo
+    - subject: Switch bsp layer to meta-tinker-board
+      hash: d8772a173078551a0fd59b75f5d7d33e0318abd6
+      body: ''
+      footer:
+        Changelog-entry: Switch bsp layer to meta-tinker-board
+        changelog-entry: Switch bsp layer to meta-tinker-board
+        Signed-off-by: Vicentiu Galanopulo <vicentiu@resin.io>
+        signed-off-by: Vicentiu Galanopulo <vicentiu@resin.io>
+      author: Vicentiu Galanopulo
+    - subject: Switch to sumo-19.0.1
+      hash: a00f9b7bb087c3f48b848194919edccaceaf6e38
+      body: ''
+      footer:
+        Changelog-entry: Switch to sumo-19.0.1
+        changelog-entry: Switch to sumo-19.0.1
+        Signed-off-by: Vicentiu Galanopulo <vicentiu@resin.io>
+        signed-off-by: Vicentiu Galanopulo <vicentiu@resin.io>
+      author: Vicentiu Galanopulo
+  version: 2.19.0+rev2
+  date: 2018-10-04T14:53:46.189Z
+- commits:
     - subject: Update meta-resin from 2.18.0 to 2.19.0
       hash: c739541e7ebc6225ee543b2f7d9d495e6992494b
       body: |
