@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.19.0+rev3
+## (2018-10-05)
+
+* Add IMAGE_BOOTLOADER for do_rootfs of resin-image [Vicentiu Galanopulo]
+
 # v2.19.0+rev2
 ## (2018-10-04)
 

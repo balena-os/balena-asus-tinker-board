@@ -1,4 +1,21 @@
 - commits:
+    - subject: Add IMAGE_BOOTLOADER for do_rootfs of resin-image
+      hash: 97dc4dfd3b3decf1e24885ae9a62f8f31eb68cd0
+      body: |
+        RESIN_IMAGE_BOOTLOADER has been added to force the compilation
+        and deploy of the u-boot package prior to creating the resin
+        image. Lack of this variable could generate the error where
+        idbloader.img created by u-boot is not available at do_rootfs
+        task of the resin-image recipe
+      footer:
+        Changelog-entry: Add IMAGE_BOOTLOADER for do_rootfs of resin-image
+        changelog-entry: Add IMAGE_BOOTLOADER for do_rootfs of resin-image
+        Signed-off-by: Vicentiu Galanopulo <vicentiu@resin.io>
+        signed-off-by: Vicentiu Galanopulo <vicentiu@resin.io>
+      author: Vicentiu Galanopulo
+  version: 2.19.0+rev3
+  date: 2018-10-05T07:45:32.390Z
+- commits:
     - subject: Updated to latest sumo
       hash: 75ab311127be1c5583cdf499bfec5e47a75ceee0
       body: |
