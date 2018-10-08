@@ -1,9 +1,14 @@
 deviceTypesCommon = require '@resin.io/device-types/common'
 { networkOptions, commonImg, instructions } = deviceTypesCommon
 
+ATBS_SD_FLASH = 'Before powering up the <%= TYPE_NAME %>, make sure that the jumper between the 5V power supply and the HDMI connector is in the MASKROM mode, as ilustrated in this link https://tinkerboarding.co.uk/wiki/index.php/Setup'
+
+ATBS_EMMC = 'Before powering up the <%= TYPE_NAME %>, make sure that the jumper between the 5V power supply and the HDMI connector is in the parking (no function) mode, as ilustrated in this link https://tinkerboarding.co.uk/wiki/index.php/Setup'
+
 postProvisioningInstructions = [
 	instructions.BOARD_SHUTDOWN
 	instructions.REMOVE_INSTALL_MEDIA
+	ATBS_EMMC
 	instructions.BOARD_REPOWER
 ]
 
@@ -22,6 +27,7 @@ module.exports =
 		instructions.ETCHER_SD
 		instructions.EJECT_SD
 		instructions.FLASHER_WARNING
+		ATBS_SD_FLASH
 	].concat(postProvisioningInstructions)
 
 	gettingStartedLink:
