@@ -15,7 +15,7 @@ diff --git a/include/configs/rk3288_common.h b/include/configs/rk3288_common.h
 index b0e7c80..cdfafbb 100644
 --- a/include/configs/rk3288_common.h
 +++ b/include/configs/rk3288_common.h
-@@ -73,6 +73,16 @@
+@@ -73,6 +73,15 @@
  
  #include <config_distro_bootcmd.h>
  
@@ -23,8 +23,7 @@ index b0e7c80..cdfafbb 100644
 +#define CONFIG_BOOTCOMMAND \
 +	"setenv resin_kernel_load_addr ${kernel_addr_r};" \
 +	"run resin_set_kernel_root;" \
-+	"setenv bootargs ${resin_kernel_root} rw rootfstype=ext4 rootwait \
-+console=tty1 console=ttyS2,115200n8;" \
++	"setenv bootargs ${resin_kernel_root} rw rootfstype=ext4 rootwait console=tty1 console=ttyS3,115200n8;" \
 +	"fatload ${resin_dev_type} ${resin_dev_index}:${resin_boot_part} ${resin_kernel_load_addr} zImage;" \
 +	"fatload ${resin_dev_type} ${resin_dev_index}:${resin_boot_part} ${fdt_addr_r} rk3288-miniarm.dtb;" \
 +	"bootz ${resin_kernel_load_addr} - ${fdt_addr_r}"
