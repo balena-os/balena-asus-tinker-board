@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.19.0+rev6
+## (2018-10-31)
+
+* Update to latest sumo [Vicentiu Galanopulo]
+
 # v2.19.0+rev5
 ## (2018-10-11)
 

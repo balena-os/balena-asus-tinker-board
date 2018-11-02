@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update to latest sumo
+      hash: a1ae63cb72107ad39c3d40007973e79ff4995965
+      body: ''
+      footer:
+        Changelog-entry: Update to latest sumo
+        changelog-entry: Update to latest sumo
+        Signed-off-by: Vicentiu Galanopulo <vicentiu@resin.io>
+        signed-off-by: Vicentiu Galanopulo <vicentiu@resin.io>
+      author: Vicentiu Galanopulo
+  version: 2.19.0+rev6
+  date: 2018-10-31T10:21:59.833Z
+- commits:
     - subject: Sumo update
       hash: a57fa8284850de8f0f511f50681763d50a886fc0
       body: ''
