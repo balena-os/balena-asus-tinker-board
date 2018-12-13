@@ -15,4 +15,4 @@
 	url = https://git.yoctoproject.org/git/poky
 [submodule "layers/meta-tinker-board"]
 	path = layers/meta-tinker-board
-	url = git@github.com:resin-os/meta-tinker-board.git
+	url = https://github.com/balena-os/meta-tinker-board.git
