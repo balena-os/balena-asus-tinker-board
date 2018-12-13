@@ -1,4 +1,24 @@
 - commits:
+    - subject: Fixup kernel-modules-headers qa checks
+      hash: 72a9acbe47e4ea59a06b9f13fb0346eb94e2d01d
+      body: |
+        In meta-balena, arch checks have been added to all binaries going in the
+        kernel-modules-headers tarball. These binaries are inherited from the
+        kernel git tree. They are compiled for x86 and trigger QA arch errors.
+        Remove them from the package. They are still included in the tarball.
+        Just removed from the package infrastructure. We don't use the ipk
+        file for anything other than QA checks
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Fixup kernel-modules-headers qa checks
+        changelog-entry: Fixup kernel-modules-headers qa checks
+        Signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+        signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+      author: Zubair Lutfullah Kakakhel
+  version: 2.26.0+rev2
+  date: 2018-12-13T07:01:52.061Z
+- commits:
     - subject: Update the meta-resin submodule from v2.19.0 to v2.26.0
       hash: 34c0c74237a0d3c6c5c218aa0b072462c040848c
       body: |
