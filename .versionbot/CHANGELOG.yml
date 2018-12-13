@@ -1,4 +1,16 @@
 - commits:
+    - subject: Switch from resin-yocto-scripts to balena-yocto-scripts
+      hash: 5c3a88c083079483bb0177400fd82974f3692d8e
+      body: ''
+      footer:
+        Changelog-entry: Switch from resin-yocto-scripts to balena-yocto-scripts
+        changelog-entry: Switch from resin-yocto-scripts to balena-yocto-scripts
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+  version: 2.26.0+rev4
+  date: 2018-12-13T10:54:52.566Z
+- commits:
     - subject: Fix submodule path for meta-tinker-board
       hash: ee8b3f0fcca9d8cf4affcfc7b9aca9b261b2ab67
       body: ''
