@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.26.0+rev3
+## (2018-12-13)
+
+* Fix submodule path for meta-tinker-board [Zubair Lutfullah Kakakhel]
+
 # v2.26.0+rev2
 ## (2018-12-13)
 

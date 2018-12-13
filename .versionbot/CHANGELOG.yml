@@ -1,4 +1,16 @@
 - commits:
+    - subject: Fix submodule path for meta-tinker-board
+      hash: ee8b3f0fcca9d8cf4affcfc7b9aca9b261b2ab67
+      body: ''
+      footer:
+        Changelog-entry: Fix submodule path for meta-tinker-board
+        changelog-entry: Fix submodule path for meta-tinker-board
+        Signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+        signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+      author: Zubair Lutfullah Kakakhel
+  version: 2.26.0+rev3
+  date: 2018-12-13T09:36:22.513Z
+- commits:
     - subject: Fixup kernel-modules-headers qa checks
       hash: 72a9acbe47e4ea59a06b9f13fb0346eb94e2d01d
       body: |
