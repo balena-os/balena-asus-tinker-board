@@ -1,6 +1,6 @@
-[submodule "resin-yocto-scripts"]
-	path = resin-yocto-scripts
-	url = https://github.com/resin-os/resin-yocto-scripts.git
+[submodule "balena-yocto-scripts"]
+	path = balena-yocto-scripts
+	url = https://github.com/balena-os/balena-yocto-scripts.git
 [submodule "layers/meta-resin"]
 	path = layers/meta-resin
 	url = https://github.com/resin-os/meta-resin.git
