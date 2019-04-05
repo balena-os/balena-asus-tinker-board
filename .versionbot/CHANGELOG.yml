@@ -1,4 +1,80 @@
 - commits:
+    - subject: Add support for identification LED
+      hash: 89da171496078530a3488b4b26405de044090754
+      body: ''
+      footer:
+        Changelog-entry: Add support for identification LED
+        changelog-entry: Add support for identification LED
+        Signed-off-by: Gergely Imreh <gergely@balena.io>
+        signed-off-by: Gergely Imreh <gergely@balena.io>
+      author: Gergely Imreh
+    - subject: >-
+        Silence spurious QA error on compilation of the kernel development
+        source package
+      hash: cb0ff327e0f2ac5473063655e1a5cbb698216c43
+      body: |
+        Complains that the kernel-devsrc package is alreadi stripped.
+      footer:
+        Changelog-entry: >-
+          Silence spurious QA error on compilation of the kernel development
+          source package
+        changelog-entry: >-
+          Silence spurious QA error on compilation of the kernel development
+          source package
+        Signed-off-by: Gergely Imreh <gergely@balena.io>
+        signed-off-by: Gergely Imreh <gergely@balena.io>
+      author: Gergely Imreh
+    - subject: Rename meta-resin to meta-balena in repository
+      hash: a94d02f7d9c0b39b4814c9a20594aed411635302
+      body: ''
+      footer:
+        Changelog-entry: Rename meta-resin to meta-balena in repository
+        changelog-entry: Rename meta-resin to meta-balena in repository
+        Signed-off-by: Gergely Imreh <gergely@balena.io>
+        signed-off-by: Gergely Imreh <gergely@balena.io>
+      author: Gergely Imreh
+    - subject: Update meta-resin from v2.29.2 to v2.31.5
+      hash: df39e7765416a3f3d13432c54cc3f36c6e9e4904
+      body: ''
+      footer:
+        Changelog-entry: Update meta-resin from v2.29.2 to v2.31.5
+        changelog-entry: Update meta-resin from v2.29.2 to v2.31.5
+        Signed-off-by: Gergely Imreh <gergely@balena.io>
+        signed-off-by: Gergely Imreh <gergely@balena.io>
+      author: Gergely Imreh
+    - subject: Change the poky submodule to our github mirror
+      hash: 37c9384735f20d19ec2805d67822b341028e9bee
+      body: |
+        We do this change because we noticed frequent timeouts
+        in different parts of our build infrastructure when pulling
+        the poky repository from https://git.yoctoproject.org/git/poky
+      footer:
+        Changelog-entry: Change the poky submodule to our github mirror
+        changelog-entry: Change the poky submodule to our github mirror
+        Signed-off-by: Gergely Imreh <gergely@balena.io>
+        signed-off-by: Gergely Imreh <gergely@balena.io>
+      author: Gergely Imreh
+    - subject: Update device type file with correct yocto version
+      hash: 1f2e32f8fc0076be253906618ea113f2c62c19ff
+      body: ''
+      footer:
+        Changelog-entry: Update device type file with correct yocto version
+        changelog-entry: Update device type file with correct yocto version
+        Signed-off-by: Gergely Imreh <gergely@balena.io>
+        signed-off-by: Gergely Imreh <gergely@balena.io>
+      author: Gergely Imreh
+    - subject: Update balena-yocto-scripts to v1.0.3
+      hash: 36521260b1f1e74cae860192e5086baf8694c2b7
+      body: ''
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to v1.0.3
+        changelog-entry: Update balena-yocto-scripts to v1.0.3
+        Signed-off-by: Gergely Imreh <gergely@balena.io>
+        signed-off-by: Gergely Imreh <gergely@balena.io>
+      author: Gergely Imreh
+  version: 2.31.5+rev1
+  date: 2019-04-05T19:51:05.631Z
+- commits:
     - subject: Enable CONFIG_CMD_SETEXPR for asus-tinker-board u-boot
       hash: a3606d1f2f0aa454506c9583f851af1a9cd330a1
       body: |

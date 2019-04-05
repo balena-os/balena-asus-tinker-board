@@ -1,6 +1,17 @@
 Change log
 -----------
 
+# v2.31.5+rev1
+## (2019-04-05)
+
+* Add support for identification LED [Gergely Imreh]
+* Silence spurious QA error on compilation of the kernel development source package [Gergely Imreh]
+* Rename meta-resin to meta-balena in repository [Gergely Imreh]
+* Update meta-resin from v2.29.2 to v2.31.5 [Gergely Imreh]
+* Change the poky submodule to our github mirror [Gergely Imreh]
+* Update device type file with correct yocto version [Gergely Imreh]
+* Update balena-yocto-scripts to v1.0.3 [Gergely Imreh]
+
 # v2.29.2+rev2
 ## (2019-01-29)
 
