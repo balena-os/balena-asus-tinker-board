@@ -22,7 +22,7 @@ module.exports =
 		machine: 'asus-tinker-board'
 		image: 'resin-image'
 		fstype: 'resinos-img'
-		version: 'yocto-rocko'
+		version: 'yocto-sumo'
 		deployArtifact: 'resin-image-asus-tinker-board.resinos-img'
 		compressed: true
 
