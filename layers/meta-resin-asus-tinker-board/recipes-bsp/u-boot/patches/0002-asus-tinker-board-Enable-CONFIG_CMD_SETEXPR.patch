@@ -1,0 +1,37 @@
+From 4f69a9aa5659ec9534f5c522d128a7fe5679aa56 Mon Sep 17 00:00:00 2001
+From: Alexandru Costache <alexandru@balena.io>
+Date: Tue, 29 Jan 2019 11:13:14 +0100
+Subject: [PATCH] asus-tinker-board: Enable CONFIG_CMD_SETEXPR
+
+This is necessary for integration with the
+BalenaOS v2.30 release
+
+Upstream-Status: Inappropriate [configuration]
+Signed-off-by: Alexandru Costache <alexandru@balena.io>
+---
+ configs/tinker-rk3288_defconfig | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/configs/tinker-rk3288_defconfig b/configs/tinker-rk3288_defconfig
+index 89394f5..0c62cce 100755
+--- a/configs/tinker-rk3288_defconfig
++++ b/configs/tinker-rk3288_defconfig
+@@ -21,7 +21,7 @@ CONFIG_CMD_SPI=y
+ CONFIG_CMD_I2C=y
+ CONFIG_CMD_USB=y
+ CONFIG_CMD_GPIO=y
+-# CONFIG_CMD_SETEXPR is not set
++CONFIG_CMD_SETEXPR=y
+ CONFIG_CMD_CACHE=y
+ CONFIG_CMD_TIME=y
+ CONFIG_CMD_PMIC=y
+@@ -71,4 +71,4 @@ CONFIG_USE_TINY_PRINTF=y
+ CONFIG_CMD_DHRYSTONE=y
+ CONFIG_OF_LIBFDT_OVERLAY=y
+ CONFIG_ERRNO_STR=y
+-CONFIG_BOOTDELAY=1
+\ No newline at end of file
++CONFIG_BOOTDELAY=1
+-- 
+2.7.4
+
