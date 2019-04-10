@@ -15,6 +15,6 @@ BBLAYERS ?= " \
     ${TOPDIR}/../layers/meta-tinker-board \
     ${TOPDIR}/../layers/meta-balena/meta-resin-common \
     ${TOPDIR}/../layers/meta-balena/meta-resin-sumo \
-    ${TOPDIR}/../layers/meta-resin-asus-tinker-board \
+    ${TOPDIR}/../layers/meta-balena-asus-tinker-board \
     ${TOPDIR}/../layers/meta-rust \
     "
