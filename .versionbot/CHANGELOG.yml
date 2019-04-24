@@ -1,4 +1,16 @@
 - commits:
+    - subject: Disable console log messages on production images
+      hash: 6b073bcb26ca9b5d1b2220753f1f09aed1b1f0f8
+      body: ''
+      footer:
+        Changelog-entry: Disable console log messages on production images
+        changelog-entry: Disable console log messages on production images
+        Signed-off-by: Gergely Imreh <gergely@balena.io>
+        signed-off-by: Gergely Imreh <gergely@balena.io>
+      author: Gergely Imreh
+  version: 2.32.0+rev2
+  date: 2019-04-24T17:44:54.643Z
+- commits:
     - subject: Update meta-balena from v2.31.5 to v2.32.0
       hash: 116fa57e37755788955cbce85f2cbd65be1751e8
       body: |
