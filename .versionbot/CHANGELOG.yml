@@ -1,4 +1,1220 @@
 - commits:
+    - subject: Update rust to 1.34
+      hash: 54bc87716adfc77a44f31b6d361626befdd9c872
+      body: ''
+      footer:
+        Changelog-entry: Update rust to 1.34
+        changelog-entry: Update rust to 1.34
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+    - subject: Update the balena-yocto-scripts submodule to v1.3.5
+      hash: da9a37149025df993f43670f5d0f895830ec4005
+      body: ''
+      footer:
+        Changelog-entry: Update the balena-yocto-scripts submodule to v1.3.5
+        changelog-entry: Update the balena-yocto-scripts submodule to v1.3.5
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+    - subject: Update meta-balena from v2.32.0 to v2.38.3
+      hash: 6573ef1139d9ccbd37ba5338562670f34facebec
+      body: |
+        Update meta-balena from 2.32.0 to 2.38.3
+      footer:
+        Changelog-entry: Update meta-balena from v2.32.0 to v2.38.3
+        changelog-entry: Update meta-balena from v2.32.0 to v2.38.3
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested:
+        - commits:
+            - subject: 'resin-proxy-config: fix up incorrect bash subshell command'
+              hash: 0c8de756c22f635b2ef499848b724f1350f555b0
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Matthew McGinn <matthew@balena.io>
+                signed-off-by: Matthew McGinn <matthew@balena.io>
+              author: Matthew McGinn
+          version: meta-balena-2.38.3
+          date: 2019-07-10T08:16:25.713Z
+        - commits:
+            - subject: >-
+                Update to kernel-modules-headers v0.0.20 to fix missing target
+                modpost binary on kernel 5.0.3
+              hash: 13bea65dd8201e91b65121ffc2d7bce5d41eedab
+              body: |
+                This version fixes the missing target modpost binary
+                on kernel version 5.0.3.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: >-
+                  Update to kernel-modules-headers v0.0.20 to fix missing target
+                  modpost binary on kernel 5.0.3
+                changelog-entry: >-
+                  Update to kernel-modules-headers v0.0.20 to fix missing target
+                  modpost binary on kernel 5.0.3
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+            - subject: >-
+                Update to kernel-modules-headers v0.0.19 to fix target objtool
+                compile issue on kernel 5.0.3
+              hash: 10846e50674185b7c3126e45ad42f3927c822415
+              body: >
+                This version fixes the use of wrong fixdep binary (the bug makes
+                it use
+
+                target fixdep binary instead of cross fixdep binary) used for
+                compiling
+
+                the target objtool binary on kernel version 5.0.3.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: >-
+                  Update to kernel-modules-headers v0.0.19 to fix target objtool
+                  compile issue on kernel 5.0.3
+                changelog-entry: >-
+                  Update to kernel-modules-headers v0.0.19 to fix target objtool
+                  compile issue on kernel 5.0.3
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+          version: meta-balena-2.38.2
+          date: 2019-06-27T12:37:01.764Z
+        - commits:
+            - subject: Add warrior to compatible layers for meta-balena-common
+              hash: 0ba0bc35ceeb78e03baebf79b738885d532734fc
+              body: |
+                In addition we delete krogoth and morty from the supported list
+                as we also removed the actual layers from the repository.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: Add warrior to compatible layers for meta-balena-common
+                changelog-entry: Add warrior to compatible layers for meta-balena-common
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+            - subject: Fix image-resin.bbclass to be able to use deprecated layers
+              hash: 9e8fed3a7170040d4ba887bfd8fc018b97de5d12
+              body: >
+                Fixes #1564
+
+
+                This bbclass uses the common layer path advertised by BBLAYERS
+                to find
+
+                the paths to different resources in board repository. For
+                example
+
+                machine json - to get the slug and advertise it in os-release.
+                After
+
+                renaming the common layer (resin to balena) and because we
+                support old
+
+                references to the old common layer name (by including a dummy
+
+                deprecation layer), we need to make sure this class can cope now
+                with
+
+                both cases.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: Fix image-resin.bbclass to be able to use deprecated layers
+                changelog-entry: Fix image-resin.bbclass to be able to use deprecated layers
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: Fix kernel-devsrc on thud when kernel version < 4.10
+              hash: c4cd6307ac3ae86a8d34b91d9dc82b6d3310db9b
+              body: >
+                Thud breaks when building against kernel version < 4.10. This is
+                a known
+
+                issue which is fixed in poky warrior[1]. This patch includes a
+
+                workaround for thud.
+
+
+                [1]
+                http://lists.openembedded.org/pipermail/openembedded-core/2019-February/278695.html
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: Fix kernel-devsrc on thud when kernel version < 4.10
+                changelog-entry: Fix kernel-devsrc on thud when kernel version < 4.10
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+          version: meta-balena-2.38.1
+          date: 2019-06-20T12:30:28.452Z
+        - commits:
+            - subject: Fix VERSION_ID os-release to be semver complient
+              hash: fecb50757c10e392d46dec6fd24360f778a87a43
+              body: >
+                Poky, following os-release(5), sanitizes VERSION_ID accordingly
+                but in
+
+                doing so it produces a nonisemver compliant version. For
+                example:
+
+                    VERSION="2.37.0+rev1"
+                    VERSION_ID="2.37.0-rev1"
+
+                This patch reverts that to make sure rev is a build tag.
+
+
+                Fixes #1560
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: Fix VERSION_ID os-release to be semver complient
+                changelog-entry: Fix VERSION_ID os-release to be semver complient
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: Introduce META_BALENA_VERSION in os-release
+              hash: b0e0c77a26f3fad51e2923ab416fdd2af2a5a033
+              body: >
+                Since #1550, os-release doesn't reference meta-balena distro
+                version anymore. Restore
+
+                that by providing this information in a new variable called
+                META_BALENA_VERSION.
+
+
+                Fixes #1558
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: Introduce META_BALENA_VERSION in os-release
+                changelog-entry: Introduce META_BALENA_VERSION in os-release
+              author: Andrei Gherzan
+            - subject: >-
+                Fix a case where changes to u-boot were not regenerating the
+                config file at build time and using stale values.
+              hash: b40271867c3249566775cfb870a6176bc47d503f
+              body: >
+                Currently once config_resin.h is generated, a change in these
+                variables
+
+                doesn't regenerate the file. Add vardeps so that bitbake can
+                regenerate
+
+                config_resin.h in case these variables are changed.
+
+
+                Fixes #1530
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: >-
+                  Fix a case where changes to u-boot were not regenerating the
+                  config file at build time and using stale values.
+                changelog-entry: >-
+                  Fix a case where changes to u-boot were not regenerating the
+                  config file at build time and using stale values.
+                Signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+                signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+              author: Zubair Lutfullah Kakakhel
+            - subject: Use all.rp_filter=2 as the default value in balenaOS
+              hash: 2fe90f3316a9394db0a060ec976d23fa97d4f00a
+              body: >
+                This change backports a PR[1] that is already in systemd and
+                will come
+
+                included by default from the version in Yocto warrior.
+
+
+                In summary, with this change we fix newer NM which stopped
+                handling
+
+                rp_filter when connected to multiple interfaces. See "device:
+                disable
+
+                rp_filter handling" commit from NM. Without this change, only
+                the
+
+                default route will me usable and binding to a specific interface
+                will
+
+                break connectivity if that interface is not also the default
+                route for
+
+                the target IP.
+
+
+                [1]https://github.com/systemd/systemd/pull/10971/commits/6caa14f763c11630f28d587b3caa5f0e6dc96165
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: Use all.rp_filter=2 as the default value in balenaOS
+                changelog-entry: Use all.rp_filter=2 as the default value in balenaOS
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: Persist bluetooth storage data over reboots
+              hash: 3815e42f24167c0ce84a39cf0653434bacb0bd88
+              body: >
+                Currently, bluez's storage data is set to /var/lib/bluetooth
+                which
+
+                in turn is a tmpfs location. We want this location persistent so
+                we can
+
+                save paired devices over reboot. We do that by adding the
+                corresponding
+
+                bind mount to the state partition and setting bluez to depend on
+                this
+
+                mount unit.
+
+
+                Fixes #1544
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: Persist bluetooth storage data over reboots
+                changelog-entry: Persist bluetooth storage data over reboots
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: Drop support for morty and krogoth Yocto versions
+              hash: 85c1eda1eeade2e5d5a1153d9c737225de0b3ee2
+              body: >
+                We have been deprecating these layers since v2.30.0. It's time
+                to drop
+
+                this support completely.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: Drop support for morty and krogoth Yocto versions
+                changelog-entry: Drop support for morty and krogoth Yocto versions
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: Add Yocto Warrior support
+              hash: b86ee8945ba71ccdae9d7d0d52b2822db39d4c6a
+              body: ''
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: Add Yocto Warrior support
+                changelog-entry: Add Yocto Warrior support
+                Signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+                signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+              author: Zubair Lutfullah Kakakhel
+            - subject: Set both VERSION_ID and VERSION in os-release to host OS version
+              hash: 40347f618b3b70ccc5f40e924990197ae9fa7e6b
+              body: >
+                VERSION and VERSION_ID had a slightly different semantics in
+                balenaOS.
+
+                VERSION was referring to the BalenaOS (host OS) version (which
+                is coming from
+
+                device repositories) while VERSION_ID was set to the
+                DISTRO_VERSION.
+
+                This brings confusion so we change it to adhere to
+
+                https://www.freedesktop.org/software/systemd/man/os-release.html.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: >-
+                  Set both VERSION_ID and VERSION in os-release to host OS
+                  version
+                changelog-entry: >-
+                  Set both VERSION_ID and VERSION in os-release to host OS
+                  version
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: Bump balena-engine to 18.9.6
+              hash: 3af08fe6d30b5f0f8148c6820cda1cca3076bf00
+              body: >
+                In preparation for warrior. Bumps containerd which works with
+                the newer
+
+                systemd in warrior.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: Bump balena-engine to 18.9.6
+                changelog-entry: Bump balena-engine to 18.9.6
+                Signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+                signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+              author: Zubair Lutfullah Kakakhel
+            - subject: Downgrade balena-supervisor to v9.15.7
+              hash: c3616e19967e30726048018161fd4763d3d45773
+              body: >
+                This is done because a feature
+                (RESIN_SUPERVISOR_MIXPANEL_REPORT) needs
+
+                more work before releasing in production.
+              footer:
+                Changelog-entry: Downgrade balena-supervisor to v9.15.7
+                changelog-entry: Downgrade balena-supervisor to v9.15.7
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: Switch from dropbear to openSSH
+              hash: ef33f21cdb7283c6f62590b1fe3d37c7fbd4df99
+              body: >
+                This is done for the "AuthorizedKeysCommand" in openSSH which in
+                turn is
+
+                used by the balena backend.
+
+
+                Fixes #1388
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: Switch from dropbear to openSSH
+                changelog-entry: Switch from dropbear to openSSH
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: Rename meta-resin-common to meta-balena-common
+              hash: db96dfc3864399a5029fa8e78bc7fe518f3ae63a
+              body: |
+                Follow the resin to balena rename on the common yocto layer.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: Rename meta-resin-common to meta-balena-common
+                changelog-entry: Rename meta-resin-common to meta-balena-common
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: Add wifi firmware for rtl8192su
+              hash: 875bd033eb400b6338c7c70417fcd78586a184cf
+              body: |
+                Fixes #1511
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: Add wifi firmware for rtl8192su
+                changelog-entry: Add wifi firmware for rtl8192su
+                Signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+                signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+              author: Zubair Lutfullah Kakakhel
+          version: meta-balena-2.38.0
+          date: 2019-06-14T15:11:59.348Z
+        - commits:
+            - subject: Update balena-supervisor to v9.15.8
+              hash: 4fcdf63860d17612ef10ff9c721b9f58c8b8c023
+              body: ''
+              footer:
+                Changelog-entry: Update balena-supervisor to v9.15.8
+                changelog-entry: Update balena-supervisor to v9.15.8
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Cameron Diver <cameron@balena.io>
+                signed-off-by: Cameron Diver <cameron@balena.io>
+              author: Cameron Diver
+            - subject: 'kernel-modules-headers: Update to v0.0.18'
+              hash: 9c1fb61a96351c112b98544117b90c4986445516
+              body: >
+                This update includes an arch64 fix (module.lds) and one for
+                passing the
+
+                correct LD flags.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: 'os-config: Update to v1.1.1 to fix mDNS'
+              hash: 8d44decba7a252bfb4399622898d18e28367c4fa
+              body: >
+                os-config has a dependency on reqwest which broke mdns on 9.6.
+                The new
+
+                os-config updated this version to one that restored this
+                functionality.
+
+
+                Partially fixes: #1531
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: Fix busybox nslookup mdns lookups
+              hash: 157a06ad295a1f03635f8291dfc4dfe3358caa9c
+              body: >
+                Since 1.29, busybox switched to an internal implementation of
+                the
+
+                resolver based on a feature config, NSLOOKUP_BIG. This is
+                enabled by
+
+                default and it's meant to be musl compatible. In BalenaOS we use
+                glibc
+
+                and we rely on it for being able to resolve names using NSS
+                modules
+
+                (libmdns).
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: Fix busybox nslookup mdns lookups
+                changelog-entry: Fix busybox nslookup mdns lookups
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: Update balena-supervisor to v9.15.4
+              hash: a6e1c40853e4bad20de9172f688eb074f8d24b86
+              body: ''
+              footer:
+                Changelog-entry: Update balena-supervisor to v9.15.4
+                changelog-entry: Update balena-supervisor to v9.15.4
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Cameron Diver <cameron@balena.io>
+                signed-off-by: Cameron Diver <cameron@balena.io>
+              author: Cameron Diver
+            - subject: >-
+                Improve logging and version comparison in linux-firmware cleanup
+                class
+              hash: 6500c7f020133833b820f9152c22b8e45794542c
+              body: >
+                This adds an easier to debug logging that shows both removed and
+                kept
+
+                firmwares. For example:
+
+                 Cleaning iwlwifi firmware version 8000C to minimum API version 34.
+                   Removing iwlwifi-8000C-13.ucode.
+                   Removing iwlwifi-8000C-22.ucode.
+                   Removing iwlwifi-8000C-21.ucode.
+                   Removing iwlwifi-8000C-31.ucode.
+                   Removing iwlwifi-8000C-16.ucode.
+                   Removing iwlwifi-8000C-27.ucode.
+                   Leaving iwlwifi-8000C-34.ucode in place.
+                   Leaving iwlwifi-8000C-36.ucode in place.
+
+                Also, this commit improves the version comparison which was
+                comparing
+
+                strings and not integers. Now we try integer comparison and
+                fallback to
+
+                string when parse fails.
+
+
+                Finally, the task's vardeps expands varflags to correctly
+                retrigger on
+
+                change.
+
+
+                Fixes #1527
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: >-
+                  Improve logging and version comparison in linux-firmware
+                  cleanup class
+                changelog-entry: >-
+                  Improve logging and version comparison in linux-firmware
+                  cleanup class
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: Sync ModemManager recipe with upstream
+              hash: e0be8f152c88a5635b5d18249c5f882caf9e31c5
+              body: >
+                We also pushed the latest update we did in BalenaOS to upstream:
+
+                http://lists.openembedded.org/pipermail/openembedded-devel/2019-May/199743.html
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: Sync ModemManager recipe with upstream
+                changelog-entry: Sync ModemManager recipe with upstream
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: Update NetworkManager to 1.18.0
+              hash: 808f6f1790357b4f282a15cbb72c603ee77f63d3
+              body: >
+                Fixes #1492
+
+
+                Pushed to upstream as well:
+
+                http://lists.openembedded.org/pipermail/openembedded-devel/2019-May/199742.html
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: Update NetworkManager to 1.18.0
+                changelog-entry: Update NetworkManager to 1.18.0
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+          version: meta-balena-2.37.0
+          date: 2019-05-29T14:57:13.320Z
+        - commits:
+            - subject: Cleanup old versions of iwlwifi firmware files in Yocto Thud
+              hash: 65122b0689d75d49b338595ec6813b1acad59223
+              body: >
+                This is done so we can save considerable amount of space on the
+                root
+
+                partition.
+
+
+                See #810
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: Cleanup old versions of iwlwifi firmware files in Yocto Thud
+                changelog-entry: Cleanup old versions of iwlwifi firmware files in Yocto Thud
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+          version: meta-balena-2.36.0
+          date: 2019-05-20T13:07:11.168Z
+        - commits:
+            - subject: Update kernel-module-headers to version v0.0.16
+              hash: 410311755dec70ba4040fcfbcb5ace59884b4644
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: Update kernel-module-headers to version v0.0.16
+                changelog-entry: Update kernel-module-headers to version v0.0.16
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+            - subject: Add uboot support for unified kernel cmdline arguments
+              hash: 35046288e2878f85e4bc33a0cb993e32d4d5aa9a
+              body: >
+                This adds set_os_cmdline which defines os_cmdline so that BSPs
+                can
+
+                import it in their bootargs and pass it to kernel accordingly.
+                Also, as
+
+                part of os_cmdline, there is an argument added when the booted
+                image is
+
+                a flasher. This can be used in the OS for various flasher
+                specific
+
+                checks.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: Add uboot support for unified kernel cmdline arguments
+                changelog-entry: Add uboot support for unified kernel cmdline arguments
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: Switch flasher detection in initramfs to flasher boot parameter
+              hash: 93e3c7286c52c6f91bf4252338955f6d7fd97fc2
+              body: |
+                Fixes #1488
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: >-
+                  Switch flasher detection in initramfs to flasher boot
+                  parameter
+                changelog-entry: >-
+                  Switch flasher detection in initramfs to flasher boot
+                  parameter
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: Update balena-supervisor to v9.15.0
+              hash: b99419662683f44c09f4369424f450b90f9d0a5a
+              body: ''
+              footer:
+                Changelog-entry: Update balena-supervisor to v9.15.0
+                changelog-entry: Update balena-supervisor to v9.15.0
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Cameron Diver <cameron@balena.io>
+                signed-off-by: Cameron Diver <cameron@balena.io>
+              author: Cameron Diver
+            - subject: >-
+                Improve boot speed by only mounting the inactive partition when
+                needed
+              hash: 28fc12ef94bc8e9a083bc5b1e8052fdb685453c2
+              body: >
+                The inactive partition is only needed for HUP or rollbacks. This
+                commit
+
+                changes the mnt-sysroot-inactive.service unit to an automount so
+                that
+
+                the partition is only mounted when used. This improves boot
+                time.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: >-
+                  Improve boot speed by only mounting the inactive partition
+                  when needed
+                changelog-entry: >-
+                  Improve boot speed by only mounting the inactive partition
+                  when needed
+                Signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+                signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+              author: Zubair Lutfullah Kakakhel
+            - subject: Fix openssl dependency of balena-unique-key
+              hash: 2159c397b0560d03441806573e14bfbcf52a7e7b
+              body: >
+                Since yocto thud, and more specifically since poky switched to
+
+                openssl 1.1 line, the openssl binary is provided by
+                'openssl-bin'. On
+
+                that version, 'openssl' doesn't provide this binary making the
+                uuid
+
+                generation script fail.
+
+
+                This patch makes 'openssl-bin' the default dependency but does
+                that in a
+
+                way that older yocto versions can overwrite it back to the old
+                provider
+
+                (openssl package).
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: Fix openssl dependency of balena-unique-key
+                changelog-entry: Fix openssl dependency of balena-unique-key
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: Do not spawn getty in production images
+              hash: 93b3298cbb343f3ebf3a03725f6f0298974bed8f
+              body: |
+                This code was deleted by commit
+                9a8f1f1b744248964d4d1b2eb2c8dd732a753980 by mistake so let's
+                add it back.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: Do not spawn getty in production images
+                changelog-entry: Do not spawn getty in production images
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+          version: meta-balena-2.35.0
+          date: 2019-05-18T22:39:09.735Z
+        - commits:
+            - subject: Update balena-supervisor to v9.14.10
+              hash: 70b9acb15806f0a276f80ab18e9f7ad4aa02d83b
+              body: ''
+              footer:
+                Changelog-entry: Update balena-supervisor to v9.14.10
+                changelog-entry: Update balena-supervisor to v9.14.10
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Cameron Diver <cameron@balena.io>
+                signed-off-by: Cameron Diver <cameron@balena.io>
+              author: Cameron Diver
+          version: meta-balena-2.34.1
+          date: 2019-05-14T10:20:59.175Z
+        - commits:
+            - subject: >-
+                Add support to update a connectivity section in NetworkManager
+                via config.json
+              hash: 2585af4a34abcd6ced3dcd0c70913ef1cdfe019d
+              body: >
+                We'd like connectivity checking so that Network Manager can
+                update
+
+                route metrics for devices that have multiple network interfaces.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: >-
+                  Add support to update a connectivity section in NetworkManager
+                  via config.json
+                changelog-entry: >-
+                  Add support to update a connectivity section in NetworkManager
+                  via config.json
+                Signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+                signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+              author: Zubair Lutfullah Kakakhel
+            - subject: 'systemd: Fix journald configuration file'
+              hash: b1cc7829758969112aae599ea0b986624596b8c6
+              body: >
+                9a8f1f1b744248964d4d1b2eb2c8dd732a753980 switched to a config
+                file
+
+                fragment but when doing so the section was missed. This patch
+                fixes
+
+                that.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: >-
+                Add --max-download-attempts=10 to balenaEngine service to
+                improve performance on shaky networks
+              hash: c699d5c13cea6a525c9d6a54152c781bd3885ecc
+              body: |
+                This should improve performance on flaky connections.
+
+                Fixes #1493
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: >-
+                  Add --max-download-attempts=10 to balenaEngine service to
+                  improve performance on shaky networks
+                changelog-entry: >-
+                  Add --max-download-attempts=10 to balenaEngine service to
+                  improve performance on shaky networks
+                Signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+                signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+              author: Zubair Lutfullah Kakakhel
+            - subject: Update balena-engine to 18.09.5
+              hash: 0894326a372e14056fede8c7acda67fa83e39284
+              body: ''
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: Update balena-engine to 18.09.5
+                changelog-entry: Update balena-engine to 18.09.5
+                Signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+                signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+              author: Zubair Lutfullah Kakakhel
+            - subject: >-
+                Log initramfs messages to kernel dmesg to capture fsck,
+                partition expand etc. command output
+              hash: 580a6fb37f5c077d3c80957db02d7cfd3376fdc5
+              body: >
+                We run some operations in the initramfs. fsck, expand partitions
+                etc.
+
+                Any error messages or warnings printed here are invisible in
+                production
+
+                images. This line from debian initramfs-tools configures the
+                initramfs
+
+                shell to log all output in /dev/kmsg so the dmesg shows the
+                output of
+
+                initramfs commands as well.
+
+                Fixes #1459
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: >-
+                  Log initramfs messages to kernel dmesg to capture fsck,
+                  partition expand etc. command output
+                changelog-entry: >-
+                  Log initramfs messages to kernel dmesg to capture fsck,
+                  partition expand etc. command output
+                Signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+                signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+              author: Zubair Lutfullah Kakakhel
+            - subject: 'kernel-resin: Add FAT fs specific configs to RESIN_CONFIGS'
+              hash: a09550d9633eaba9b55ce2c98d9a43a5b52dfe6f
+              body: |
+                Add FAT fs specific configs, necessary to mount the
+                boot partition
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changlog-entry: Add FAT fs specific configs to RESIN_CONFIGS
+                changlog-entry: Add FAT fs specific configs to RESIN_CONFIGS
+                Signed-off-by: Sebastian Panceac <sebastian@balena.io>
+                signed-off-by: Sebastian Panceac <sebastian@balena.io>
+              author: Sebastian Panceac
+            - subject: Update balena-supervisor to v9.14.9
+              hash: 167164b41957981b67c90dd78a19073a2b231878
+              body: ''
+              footer:
+                Changelog-entry: Update balena-supervisor to v9.14.9
+                changelog-entry: Update balena-supervisor to v9.14.9
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Cameron Diver <cameron@balena.io>
+                signed-off-by: Cameron Diver <cameron@balena.io>
+              author: Cameron Diver
+            - subject: Introduce meta-balena yocto thud support
+              hash: b2fea323b337bd6868f3f41b70f8bdb688b11bb8
+              body: ''
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: Introduce meta-balena yocto thud support
+                changelog-entry: Introduce meta-balena yocto thud support
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: Update os-config to 1.1.0
+              hash: 0ff476e2724525b96e3d72fc00d22423af2d6cb4
+              body: >
+                This version includes rust 1.33 support which we use in
+                balenaOS.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: Update os-config to 1.1.0
+                changelog-entry: Update os-config to 1.1.0
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+          version: meta-balena-2.34.0
+          date: 2019-05-10T10:24:10.994Z
+        - commits:
+            - subject: Fixes for sysroot symlinks creation
+              hash: b7a6412e6368d3d562ff1ca2fb06be92a24a8548
+              body: >
+                When we set the udev rule we use IMPORT{program} to know what
+                symlinks
+
+                to create in the sysroot directory. The problem is that we don't
+                use
+
+                absolute paths and from the documentation udev uses
+                /usr/lib/udev as the
+
+                default path while we install the invoked script in /lib/udev.
+
+
+                ```
+                  Execute an external program specified as the assigned value. If no
+                  absolute path is given, the program is expected to live in
+                  /usr/lib/udev; otherwise, the absolute path must be specified.
+                ```
+
+
+                This PR changes the udev rule to use an absolute path for the
+
+                resin_update_state_probe script. Also it fixes some typos in the
+                script
+
+                itself.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: Fixes for sysroot symlinks creation
+                changelog-entry: Fixes for sysroot symlinks creation
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: >-
+                libmbim: Refresh patches after last update to avoid build
+                warnings
+              hash: 3b3bfcd8c74070797b55ab2a6e7079cc320581a6
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: >-
+                modemmanager: Refresh patches after last update to avoid build
+                warnings
+              hash: 83ccf2a4a131b8a116ab90e6272734ac67d73781
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: Make security flags inclusion yocto version specific
+              hash: 9571c572e4abcd1ea5951fa408b1543bc40db8c9
+              body: >
+                Since thud, poky distro file on which balena OS is based,
+                already
+
+                includes security_flags.inc. Because of this change, this
+                version throws
+
+                a build warning similar to:
+
+
+                WARNING Duplicate inclusion for
+                /build/../layers/poky/meta/conf/distro/include/security_flags.inc
+
+                in
+                /build/../layers/meta-resin/meta-balena-thud/conf/distro/include/balena-os-yocto-version.inc
+
+
+                This happens because again, we import `poky` and
+                `security_flags` but
+
+                since thud, poky includes security_flags by default. In order to
+                avoid
+
+                this warning we import it (security_flags) now using an .inc
+                file at the
+
+                level of the yocto version meta-balena layer. There is as well a
+                small
+
+                additional wrinkle here. We switch the include statement from
+                `require`
+
+                to `include` so new layers (like thud) don't have to carry this
+                hack in
+
+                the future.
+
+
+                This commit prepares meta-balena for thud support.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: Make security flags inclusion yocto version specific
+                changelog-entry: Make security flags inclusion yocto version specific
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: 'systemd: Make directory warning patch yocto version specific'
+              hash: 7bedeb98520b6b1bc995b4484f6b61d347a0befe
+              body: >
+                We used to have this patch applied for all the supported yocto
+                versions.
+
+                Since thud, this patch is included by default so this change
+                backports
+
+                it on all the rest of the supported mate-balena yocto version
+                specific
+
+                layers.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: Replace wireless tools by iw
+              hash: 81839342bebec4ca915f091607bb3977dc02d675
+              body: >
+                From yocto thud, wireless-tools recipe was removed and the iw
+                can be
+
+                used as a replacement. We switch as well in preparation for thud
+
+                support.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: Replace wireless tools by iw
+                changelog-entry: Replace wireless tools by iw
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: 'systemd: Use a conf.d file for journald configuration'
+              hash: 9a8f1f1b744248964d4d1b2eb2c8dd732a753980
+              body: >
+                Since yocto thud systemd main configuration files are part of
+                another
+
+                recipe - systemd-conf. See poky commit:
+
+                28c2f0dfe3ae06d87772b2a88fcace5a03e09143
+
+
+                This commit prepares meta-balena for thud support.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: Set go verison to 1.10.8 to match balena-engine requirements
+              hash: 1f92a80e4a768bdff4646ccd31cc5c815a114be6
+              body: >
+                The reason for including this version is that balena-engine
+                requires
+
+                newer go compiler and also we want to unify it across our
+                supported
+
+                yocto versions to avoid eventual possible runtime issues.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: Set go verison to 1.10.8 to match balena-engine requirements
+                changelog-entry: Set go verison to 1.10.8 to match balena-engine requirements
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: Update balena-engine to 18.09.3
+              hash: 53ce14708251cda410f2e870b6ec9342e7e4e1e4
+              body: ''
+              footer:
+                Change-type: minor
+                change-type: minor
+                CHangelog-entry: Update balena-engine to 18.09.3
+                changelog-entry: Update balena-engine to 18.09.3
+                Signed-off-by: Andrei Gherzan <andrei@balena.io>
+                signed-off-by: Andrei Gherzan <andrei@balena.io>
+              author: Andrei Gherzan
+            - subject: Update balena-supervisor to v9.14.6
+              hash: 0ec51a88d9389b9f71a4bb4b2e33fda9464cde8c
+              body: ''
+              footer:
+                Changelog-entry: Update balena-supervisor to v9.14.6
+                changelog-entry: Update balena-supervisor to v9.14.6
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Cameron Diver <cameron@balena.io>
+                signed-off-by: Cameron Diver <cameron@balena.io>
+              author: Cameron Diver
+            - subject: 'resin-u-boot: make devtool-compatible'
+              hash: fb727b680fbfad8db39c2b491e49f1568c111436
+              body: >
+                devtool moves the files from the WORKDIR into
+                ${S}/oe-local-files which makes
+
+                copying of env_resin.h fail if the u-boot source is being
+                modified using
+
+                devtool. Since devtool also alters FILESPATH to include said
+                oe-local-files
+
+                directory, we can iterate over those paths instead of relying on
+                WORKDIR.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Sven Schwermer <sven.schwermer@disruptive-technologies.com>
+                signed-off-by: Sven Schwermer <sven.schwermer@disruptive-technologies.com>
+              author: Sven Schwermer
+            - subject: 'docker-disk: Disable unnecessary docker pid check'
+              hash: d7583f3373de1188240e65a8e30def281657e0d0
+              body: >
+                By checking for a pid you are prevented from building Balena
+                inside
+
+                of a privileged container with a bind mount on
+                /var/run/docker.sock
+
+
+                The "Test docker execute permission" stanza is adequate for
+                testing
+
+                if docker is operational.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changlog-entry: Disable unnecessary docker pid check
+                changlog-entry: Disable unnecessary docker pid check
+                Signed-off-by: Armin Schlegel <armin.schlegel@gmx.de>
+                signed-off-by: Armin Schlegel <armin.schlegel@gmx.de>
+              author: Armin Schlegel
+            - subject: Update libmbim to version 1.18.0
+              hash: 677159770b7cfa0eb0a6611094ea7673f67883d3
+              body: ''
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: Update libmbim to version 1.18.0
+                changelog-entry: Update libmbim to version 1.18.0
+                Signed-off-by: Zahari Petkov <zahari@balena.io>
+                signed-off-by: Zahari Petkov <zahari@balena.io>
+              author: Zahari Petkov
+            - subject: Update libqmi to version 1.22.2
+              hash: 8047b6b9ec42ef4aab9798e516e4ded54a62a252
+              body: ''
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: Update libqmi to version 1.22.2
+                changelog-entry: Update libqmi to version 1.22.2
+                Signed-off-by: Zahari Petkov <zahari@balena.io>
+                signed-off-by: Zahari Petkov <zahari@balena.io>
+              author: Zahari Petkov
+            - subject: Update to ModemManager v1.10.0
+              hash: 774b270a7f963740b4c209efc6c66085a7d7c906
+              body: |
+                Fixes #1457
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: Update to ModemManager v1.10.0
+                changelog-entry: Update to ModemManager v1.10.0
+                Signed-off-by: Zahari Petkov <zahari@balena.io>
+                signed-off-by: Zahari Petkov <zahari@balena.io>
+              author: Zahari Petkov
+            - subject: >-
+                Add a OS_KERNEL_CMDLINE parameter that allows BSPs to easily add
+                extra kernel cmdline args to production images
+              hash: 4b607b32495737f6f83f12e891188ab008b0de47
+              body: >
+                balenaOS comes in two flavours, production/development.
+                production
+
+                images have various options passed to the kernel cmdline.
+
+                Currently some devices BSPs have those options passed and some
+                dont.
+
+                It'll be hard to keep the common options consistent.
+
+                e.g. consoleblank=0 is passed for some devices and not for
+                others.
+
+
+                We'd like the extra options we pass to be in one place. All BSPs
+                can
+
+                then append this variable in their respective recipe/bootloader
+                config
+
+                etc.
+
+
+                Fixes #1464
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: >-
+                  Add a OS_KERNEL_CMDLINE parameter that allows BSPs to easily
+                  add extra kernel cmdline args to production images
+                changelog-entry: >-
+                  Add a OS_KERNEL_CMDLINE parameter that allows BSPs to easily
+                  add extra kernel cmdline args to production images
+                Signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+                signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+              author: Zubair Lutfullah Kakakhel
+          version: meta-balena-2.33.0
+          date: 2019-05-02T13:26:16.845Z
+  version: 2.38.3+rev1
+  date: 2019-07-16T12:33:34.852Z
+- commits:
     - subject: Update meta-balena from v2.31.5 to v2.32.0
       hash: 116fa57e37755788955cbce85f2cbd65be1751e8
       body: |
