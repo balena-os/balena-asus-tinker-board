@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update balena-yocto-scripts to v1.3.8
+      hash: 78a8794c4dbf452c02d4c8203741c392479d09eb
+      body: ''
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to v1.3.8
+        changelog-entry: Update balena-yocto-scripts to v1.3.8
+        Signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+        signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+      author: Zubair Lutfullah Kakakhel
+  version: 2.38.3+rev2
+  date: 2019-10-10T15:44:55.031Z
+- commits:
     - subject: Update rust to 1.34
       hash: 54bc87716adfc77a44f31b6d361626befdd9c872
       body: ''
