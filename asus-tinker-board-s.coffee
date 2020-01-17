@@ -18,7 +18,7 @@ module.exports =
 	aliases: [ 'asus-tinker-board-s' ]
 	name: 'Asus Tinker Board S'
 	arch: 'armv7hf'
-	state: 'experimental'
+	state: 'released'
 
 	stateInstructions:
 		postProvisioning: postProvisioningInstructions

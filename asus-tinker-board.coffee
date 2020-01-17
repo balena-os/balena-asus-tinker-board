@@ -7,7 +7,7 @@ module.exports =
 	aliases: [ 'asus-tinker-board' ]
 	name: 'Asus Tinker Board'
 	arch: 'armv7hf'
-	state: 'experimental'
+	state: 'released'
 
 	instructions: commonImg.instructions
 
