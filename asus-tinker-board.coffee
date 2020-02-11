@@ -12,9 +12,9 @@ module.exports =
 	instructions: commonImg.instructions
 
 	gettingStartedLink:
-		windows: 'https://docs.resin.io/asus-tinker-board/nodejs/getting-started/#adding-your-first-device'
-		osx: 'https://docs.resin.io/asus-tinker-board/nodejs/getting-started/#adding-your-first-device'
-		linux: 'https://docs.resin.io/asus-tinker-board/nodejs/getting-started/#adding-your-first-device'
+		windows: 'https://www.balena.io/docs/learn/getting-started/asus-tinker-board/nodejs/'
+		osx: 'https://www.balena.io/docs/learn/getting-started/asus-tinker-board/nodejs/'
+		linux: 'https://www.balena.io/docs/learn/getting-started/asus-tinker-board/nodejs/'
 
 	supportsBlink: true
 
