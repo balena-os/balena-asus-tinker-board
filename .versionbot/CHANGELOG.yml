@@ -1,4 +1,20 @@
 - commits:
+    - subject: Enable framebruffer console rotation in the kernel
+      hash: edaac18bee37c9c202880d23bd2725d4c3a09ca4
+      body: |
+        It can be controlled with for example:
+        ```
+        echo 1 > /sys/devices/virtual/graphics/fbcon/rotate_all
+        ```
+      footer:
+        Changelog-entry: Enable framebruffer console rotation in the kernel
+        changelog-entry: Enable framebruffer console rotation in the kernel
+        Signed-off-by: Gergely Imreh <gergely@balena.io>
+        signed-off-by: Gergely Imreh <gergely@balena.io>
+      author: Gergely Imreh
+  version: 2.38.3+rev7
+  date: 2020-02-12T12:39:24.012Z
+- commits:
     - subject: Update links to getting started guide from resin.io to balena.io
       hash: 435b4fe4fb87105003565e555f2898df0ecca534
       body: ''

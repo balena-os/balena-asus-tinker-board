@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.38.3+rev7
+## (2020-02-12)
+
+* Enable framebruffer console rotation in the kernel [Gergely Imreh]
+
 # v2.38.3+rev6
 ## (2020-02-12)
 
