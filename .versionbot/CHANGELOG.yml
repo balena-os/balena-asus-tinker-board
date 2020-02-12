@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update meta-rust to include 1.36
+      hash: b6909ae54dea637a43656518494670f61243384b
+      body: ''
+      footer:
+        Changelog-entry: Update meta-rust to include 1.36
+        changelog-entry: Update meta-rust to include 1.36
+        Signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+        signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+      author: Zubair Lutfullah Kakakhel
+  version: 2.38.3+rev7
+  date: 2020-02-12T12:33:34.770Z
+- commits:
     - subject: Update links to getting started guide from resin.io to balena.io
       hash: 435b4fe4fb87105003565e555f2898df0ecca534
       body: ''
