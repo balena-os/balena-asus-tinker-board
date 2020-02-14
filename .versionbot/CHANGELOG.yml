@@ -1,4 +1,23 @@
 - commits:
+    - subject: Patches for TCP-based remote denial of service vulnerabilities
+      hash: de879cae8ab4779ca25e1e1e5944ed2fc9198e4a
+      body: >
+        Add patches for multiple TCP-based remote denial
+
+        of service vulnerabilities identified by Netflix.
+
+        Patch source:
+
+        https://github.com/Netflix/security-bulletins/blob/master/advisories/third-party/2019-001.md
+      footer:
+        Changelog-entry: Patches for TCP-based remote denial of service vulnerabilities
+        changelog-entry: Patches for TCP-based remote denial of service vulnerabilities
+        Signed-off-by: Vicentiu Galanopulo <vicentiu@balena.io>
+        signed-off-by: Vicentiu Galanopulo <vicentiu@balena.io>
+      author: Vicentiu Galanopulo
+  version: 2.38.3+rev8
+  date: 2020-02-14T14:34:35.178Z
+- commits:
     - subject: Update meta-rust to include 1.36
       hash: b6909ae54dea637a43656518494670f61243384b
       body: ''

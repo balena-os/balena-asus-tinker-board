@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.38.3+rev8
+## (2020-02-14)
+
+* Patches for TCP-based remote denial of service vulnerabilities [Vicentiu Galanopulo]
+
 # v2.38.3+rev7
 ## (2020-02-12)
 
