@@ -1,4 +1,16 @@
 - commits:
+    - subject: Set private to false in .coffee files for the public device types
+      hash: 573f0893275424f7f0b93f8de3f6359ff89d0186
+      body: ''
+      footer:
+        Changelog-entry: Set private to false in .coffee files for the public device types
+        changelog-entry: Set private to false in .coffee files for the public device types
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+  version: 2.38.3+rev8
+  date: 2020-05-12T08:32:56.565Z
+- commits:
     - subject: Update meta-rust to include 1.36
       hash: b6909ae54dea637a43656518494670f61243384b
       body: ''
