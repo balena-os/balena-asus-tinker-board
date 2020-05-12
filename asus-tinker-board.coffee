@@ -8,6 +8,7 @@ module.exports =
 	name: 'Asus Tinker Board'
 	arch: 'armv7hf'
 	state: 'released'
+	private: false
 
 	instructions: commonImg.instructions
 
