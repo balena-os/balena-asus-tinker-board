@@ -19,6 +19,7 @@ module.exports =
 	name: 'Asus Tinker Board S'
 	arch: 'armv7hf'
 	state: 'released'
+	private: false
 
 	stateInstructions:
 		postProvisioning: postProvisioningInstructions
