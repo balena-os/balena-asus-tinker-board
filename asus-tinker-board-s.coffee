@@ -40,10 +40,10 @@ module.exports =
 
 	yocto:
 		machine: 'asus-tinker-board-s'
-		image: 'resin-image-flasher'
-		fstype: 'resinos-img'
+		image: 'balena-image-flasher'
+		fstype: 'balenaos-img'
 		version: 'yocto-sumo'
-		deployArtifact: 'resin-image-flasher-asus-tinker-board-s.resinos-img'
+		deployArtifact: 'balena-image-flasher-asus-tinker-board-s.balenaos-img'
 		compressed: true
 
 	options: [ networkOptions.group ]
