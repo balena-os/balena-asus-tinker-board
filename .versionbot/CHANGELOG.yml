@@ -1,4 +1,746 @@
 - commits:
+    - subject: Update balena-yocto-scripts to v1.16.0
+      hash: ec191a84b543b12c9c321feef1cb337525da39ee
+      body: |
+        Update balena-yocto-scripts from v1.14.9 to v1.16.0
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Update balena-yocto-scripts to v1.16.0
+        changelog-entry: Update balena-yocto-scripts to v1.16.0
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested:
+        - commits:
+            - subject: 'balena-deploy: Check for file existence before deploying'
+              hash: 36494bf99a08b68a5afac5038d4691a583d01500
+              body: >
+                When discontinuing a device type, there are no artifacts apart
+                from
+
+                device-type.json, so check that the logo is there before
+                deploying.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'balena-deploy-block: Check existence of tag before re-deploying'
+              hash: c1a5b20b0ef0d04a30b6bf0bcfacf0a527e931ae
+              body: >
+                If a release is already tagged with this version, issue a
+                warning and
+
+                bail out.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'balena-api: Add function to check the existence of a release tag'
+              hash: bdc2146c3ad719f5c7335aeb7b4ee43775a20ac7
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'balena-deploy-block: Finalize releases when deployed'
+              hash: 1e3768132d87295998bd9a17d0f01121e161e312
+              body: >
+                For now and until a proper CI/CD workflow is in place, finalize
+                releases
+
+                on deployment.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: Accept deployments without balena.yml
+              hash: 23c1f91993f37a18ade26ceef621e24409be5f74
+              body: >
+                If no balena.yml file exists, the deployment will go through
+                without
+
+                setting a release semver.
+
+
+                For the time being we are still using a version label in the
+                hostapp.
+
+
+                This commit will be reverted once we get rid of the version
+                label.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: Accept deployments without balena.yml
+                changelog-entry: Accept deployments without balena.yml
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'jenkins_generate_ami: Remove variant from image name'
+              hash: 0fe3d6c8d0ebff85248f0bed99750186f05ab686
+              body: |
+                The OS is now a unified image so there are no variants.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'balena-build.sh: Stop building OS variants'
+              hash: 4e65c83e7808e91c99e335609142401e0031ed23
+              body: |
+                The OS is now a unified image so there are no variants.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'jenkins_build.sh: Remove buildFlavor'
+              hash: b66f7ce58f0c12f78941ed34eb311bbd3a96af1c
+              body: |
+                The OS is now a unified image so there are no build flavours.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'jenkins_build-blocks: Remove variant build option'
+              hash: e7fb9fc8354445bcbc05687e1f96aa0e8025ecc9
+              body: |
+                The OS is now a unified image without variants.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'balena-deploy: Stop using .dev/.prod variant suffixes'
+              hash: 65c030b986f62b0faaddba501520662a8ac2777d
+              body: >
+                The OS has now a unified image that can be configured to be
+                development
+
+                or production mode.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'balena-deploy-block: Stop tagging hostapp releases with variant'
+              hash: 3fc5efeeef4ae74e499504c1148932539a49c28e
+              body: >
+                The API will stop using the variant tag but will still use the
+                version
+
+                tag.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'balena-lib: Use externalVersion to match contracts'
+              hash: 385c5bacfc1452e4b065de55bfdf71727b303fff
+              body: >
+                The version refers to the actual contract, while the
+                externalVersion is
+
+                the one that refers to the balenaOS revision.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'jenkins_build: Deploy hostapp like any other block'
+              hash: bfe7f51dc75f335d38fa4dbf824fa887be8d82ee
+              body: |
+                Use common functions for block deployments
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'jenkins_build-blocks: Separate block build release deployment'
+              hash: 70fe00969921bbf6894cc86ecb343eb342c6f2ca
+              body: >
+                Separating the build and release of blocks allows to use common
+                code for
+
+                block release.
+
+
+                Also, pass a flag to specify whether the block should be
+                deployed as final
+
+                release.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'balena-deploy-block: Use release versioning'
+              hash: d1c74d0261f17ebcad9825bc7e0df22142da14a3
+              body: >
+                Deploy as draft releases by default. Final releases will be
+                flagged
+
+                once validation passes.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'jenkins_build: Remove discontinued check'
+              hash: 55774ee27f938bbcbb238aa6441680b3d39172c3
+              body: >
+                Individual deploy functions now bail out for discontinued device
+                types,
+
+                there is no need to check for it here.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'balena-deploy: Do not deploy discontinued device types'
+              hash: f54251e61c466018072e04c344595b3eba70bf57
+              body: >
+                Check for discontinued device types before deploying to
+                dockerhub or
+
+                to balenaCloud.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'balena-deploy: Discontinued device types use meta-balena version'
+              hash: bbecd72c64bf8ff1277a10c03cb39fbf99748e05
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: >-
+                balena-deploy: Adapt balena_deploy_block to release versioning
+                and use it
+              hash: cfc0bc43af1fb60ff3ddd56f08ae781edaa90b68
+              body: >
+                * Convert balena_deploy_build_block to balena_build_block, and
+                deploy
+                  with balena_deploy_block
+                * Remove balena_deploy_hostapp and replace with
+                balena_deploy_block
+
+                * Modify balena_deploy_hostos to use balena_deploy_block
+
+                * Modify balena_deploy_block to use release versioning
+
+
+                By deafult image deployments happen as draft versions, and only
+                become
+
+                final when passing validation.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'balena-build-block: Remove image release'
+              hash: 443269afbe867cb5c464ca5dd91bf27aa51427bd
+              body: >
+                Deal with the release separately so we can use common code for
+                it.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'balena-api: Use release revision for fetchers'
+              hash: f501ac55e327af0db2142a146423e83f459e0c1f
+              body: >
+                When fetching images for blocks, use a given release revision.
+
+
+                Also, add token autentication to the API calls that miss it so
+                that they work
+
+                with private device types.
+
+
+                Finally, fix indentation.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'jenkins_build-block: Remove release version API setter'
+              hash: 8e27328a0caec2acc7651dfe64f8dfc5510e48e0
+              body: >
+                When using the now deprecated release_version field, the API
+                would
+
+                reject deployments for an existing release.
+
+
+                On the new versioning model, deployments increment a revision
+                field so
+
+                there is no need to check for uniqueness.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'balena-api: Remove release version API setter'
+              hash: 42486a59654047cf42f19bd999ef0bcd0a279ea5
+              body: >
+                This functionality has now been deprecated in the balena API is
+                favour
+
+                of draft/final release versioning.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'balena-lib: Use release versioning'
+              hash: de2c7af440c1ae4d6f84c5440368f92333500389
+              body: >
+                BalenaCloud has now a release versioning feature that deprecates
+                the
+
+                use of release_version.
+
+
+                Introduce a new balena_lib_release() function that utilises a
+                balena
+
+                contract and the CLI to set the release version.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.16.0
+          date: 2021-12-30T15:08:43.225Z
+        - commits:
+            - subject: >-
+                balena-deploy: Set leviathan networkWireless mode based on
+                device slug
+              hash: 891fadcbabe422e24245beb720cf7326a5ea1136
+              body: >
+                These changes are currently made in the Jenkins job, so it's
+                preferrable
+
+                to have it done by the packaging scripts.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.15.10
+          date: 2021-12-02T21:08:09.863Z
+        - commits:
+            - subject: Substitute the worker types for generic device slugs
+              hash: 7539caf732975a5b114abc371a5f6df211d12812
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.15.9
+          date: 2021-11-26T19:20:31.029Z
+        - commits:
+            - subject: 'Dockerfile_yocto-build-env: Install Honister host deps'
+              hash: efc069c609431965394912d3ffd34362a1108852
+              body: >
+                See
+                http://docs.yoctoproject.org/next/migration-guides/migration-3.4.html#new-host-dependencies
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: balena-yocto-scripts-1.15.8
+          date: 2021-11-03T10:01:44.980Z
+        - commits:
+            - subject: 'jenkins_build.sh: Fix deployment for discontinued device types'
+              hash: 84e65e937fef38625277fb8330ebd3179c466d04
+              body: >
+                Do not deploy dockerhub or hostapp images for discontinued
+                device types.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'jenkins_build.sh: Remove PRIVATE_DT as it is unused'
+              hash: 35fd54620ff5eb487b1323a1ead5fef9c157e385
+              body: >
+                The private device types status is checked with the API when
+                required.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: 'jenkins_build.sh: Fix lint warnings'
+              hash: 068a4197101a2db4aba60793e01564b67d14f820
+              body: |
+                Fix some minor lint warnings.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.15.7
+          date: 2021-10-25T16:57:03.955Z
+        - commits:
+            - subject: >-
+                balena-generate-ami.sh: wait for boot partition when preloading
+                AMI
+              hash: d2ea170a86810a782eeb241e178d4ad72c4939b0
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: balena-yocto-scripts-1.15.6
+          date: 2021-10-21T15:04:37.774Z
+        - commits:
+            - subject: >-
+                jenkins_generate_ami.sh: Use a shared directory for preloaded
+                image
+              hash: 9b032f2fddc970db13147b4e637abd1bada1f234
+              body: >
+                The previous commit moved the preloaded image out of yocto
+                cache, which
+
+                made it unreachable from the balena-generate-ami-env container.
+
+
+                This patch makes mktemp create the file back within yocto cache
+                to ensure
+
+                this is shared yet still each concurrent process can safely have
+                its own copy.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: balena-yocto-scripts-1.15.5
+          date: 2021-10-21T04:50:17.146Z
+        - commits:
+            - subject: 'barys: update development image variables'
+              hash: 427510332026ca8636dedb6630632a740b481374
+              body: |
+                Update the DEVELOPMENT_IMAGE references to use OS_DEVELOPMENT
+                following the changes to the handling of OS variants.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: 'barys: update development image variables'
+                changelog-entry: 'barys: update development image variables'
+                Signed-off-by: Mark Corbin mark@balena.io
+                signed-off-by: Mark Corbin mark@balena.io
+              author: Mark Corbin
+              nested: []
+          version: balena-yocto-scripts-1.15.4
+          date: 2021-10-20T09:40:14.890Z
+        - commits:
+            - subject: 'jenkins_generate_ami.sh: Preload outside of yocto cache'
+              hash: fb1763984d76218adc2510da6cb673fbad7197be
+              body: >
+                Since the file name is hardcoded at this moment, this fails when
+                two
+
+                builds are running in parallel (e.g. dev and prod variants
+                during deploy)
+
+                because they try to preload the same file at pretty much the
+                same moment.
+
+                Having a separate copy for each outside of yocto cache should
+                fix the issue.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: balena-yocto-scripts-1.15.3
+          date: 2021-10-20T05:12:57.093Z
+        - commits:
+            - subject: >-
+                balena-generate-ami.sh: correctly mount boot partition when
+                injecting SSH key
+              hash: c0f6da3e4fe3f9c51ba8b279986a6f4baffe6d96
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: balena-yocto-scripts-1.15.2
+          date: 2021-10-01T14:45:58.407Z
+        - commits:
+            - subject: Update balena-cli to 12.50.1
+              hash: 700ebe6d06385440488a42c42179d19434376209
+              body: >
+                This is necessary for AMI preloading to work, additionally
+
+                it has been more than a year since the last update, we should
+                keep up.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: Update balena-cli to 12.50.1
+                changelog-entry: Update balena-cli to 12.50.1
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: balena-yocto-scripts-1.15.1
+          date: 2021-10-01T10:11:14.438Z
+        - commits:
+            - subject: >-
+                jenkins_generate_ami.sh: Use lib function to get arch from
+                config.json
+              hash: fffe9ffb363c9eed783a5055e69847c81eb68bcd
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+            - subject: >-
+                balena-generate-ami.sh: Look for boot partition by label rather
+                than hardcoding p1
+              hash: 45786e701d05811f96d0aeef20481442bb1d0f1c
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+            - subject: 'balena-generate-ami.sh: Fail if AMI already exists'
+              hash: 9e9a792aed2a659c1ed7327237a61594033b308a
+              body: >
+                This was only ignored for development purposes, we should not
+                replace
+
+                released images.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+            - subject: 'balena-generate-ami.sh: sync after writing config.json'
+              hash: f0838aaee9751a6fb60558a7646d597b1f99b1c3
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+            - subject: 'balena-generate-ami.sh: Stick to POSIX-compliant [ instead of [['
+              hash: 2c6a97c263a71c63387290fca29ba5b01eba8db4
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+            - subject: 'balena-generate-ami.sh: Remove useless statements'
+              hash: 9d4ac02f3ad8eadaed79703dbc859c4950449810
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+            - subject: >-
+                jenkins_generate_ami.sh: Use architecture as suffix instead of
+                machine name
+              hash: 7d2e3911defedc500b3b1ded3268dbe74bb523b0
+              body: >
+                This removes the necessity for the DT being named generic-*. It
+                also means
+
+                all the DTs of the same architecture will preload the same app.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+            - subject: 'jenkins_build.sh: pass MACHINE to jenkins_generate_ami.sh'
+              hash: 0e33582e2860474e1c6aff5275539b1333aef6b9
+              body: >
+                This removes the dependency on JOB_NAME from
+                jenkins_generate_ami.sh
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+            - subject: 'AMI automation: Adjust AMI names to be compatible with AWS API'
+              hash: bc91b7036b32aa57c053c115ac87b7f21fa634c8
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: ab77
+              nested: []
+            - subject: 'AMI automation: Correct S3 bucket name and key'
+              hash: 8864adcb20c1f4cbfd48e422dbae44b885c8ca06
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: ab77
+              nested: []
+            - subject: 'AMI automation: Add a separate container for generaing AMI'
+              hash: d7d91ff4c3ea655dfa9a483a020d2d16aa5e0f49
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+            - subject: 'AMI automation: shellcheck and resolve violations'
+              hash: 6b11dd26bc1229aafed98c5933f23e892811f49f
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: ab77
+              nested: []
+            - subject: 'AMI automation: Use staging env by default'
+              hash: 21fa55a6f73faf59fe5fc3b1e6e8bc4084e17c01
+              body: ''
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Tomás Tormo <tomast@balena.io>
+                signed-off-by: Tomás Tormo <tomast@balena.io>
+              author: Tomás Tormo
+              nested: []
+            - subject: 'AMI automation: Simplify public ssh addition. Do not use sudo'
+              hash: dd96771607f79620a241e4dee99879542643f55f
+              body: ''
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Tomás Tormo <tomast@balena.io>
+                signed-off-by: Tomás Tormo <tomast@balena.io>
+              author: Tomás Tormo
+              nested: []
+            - subject: 'automation: Generate and publish AMI from the raw balenaOS image'
+              hash: efe2b5beb5ea6b00fff07372a312c7e0c690654b
+              body: ''
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Tomás Tormo <tomast@balena.io>
+                signed-off-by: Tomás Tormo <tomast@balena.io>
+              author: Tomás Tormo
+              nested: []
+          version: balena-yocto-scripts-1.15.0
+          date: 2021-10-01T04:12:24.310Z
+  version: 2.78.0+rev4
+  date: 2021-12-30T18:41:03.996Z
+- commits:
     - subject: Add balena-yocto-scripts upstream source
       hash: d8927761239a91a65e4cc04059e23cd04dac47ab
       body: >

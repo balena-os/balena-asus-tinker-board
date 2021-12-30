@@ -1,6 +1,114 @@
 Change log
 -----------
 
+# v2.78.0+rev4
+## (2021-12-30)
+
+
+<details>
+<summary> Update balena-yocto-scripts to v1.16.0 [Alex Gonzalez] </summary>
+
+> ## balena-yocto-scripts-1.16.0
+> ### (2021-12-30)
+> 
+> * balena-deploy: Check for file existence before deploying [Alex Gonzalez]
+> * balena-deploy-block: Check existence of tag before re-deploying [Alex Gonzalez]
+> * balena-api: Add function to check the existence of a release tag [Alex Gonzalez]
+> * balena-deploy-block: Finalize releases when deployed [Alex Gonzalez]
+> * Accept deployments without balena.yml [Alex Gonzalez]
+> * jenkins_generate_ami: Remove variant from image name [Alex Gonzalez]
+> * balena-build.sh: Stop building OS variants [Alex Gonzalez]
+> * jenkins_build.sh: Remove buildFlavor [Alex Gonzalez]
+> * jenkins_build-blocks: Remove variant build option [Alex Gonzalez]
+> * balena-deploy: Stop using .dev/.prod variant suffixes [Alex Gonzalez]
+> * balena-deploy-block: Stop tagging hostapp releases with variant [Alex Gonzalez]
+> * balena-lib: Use externalVersion to match contracts [Alex Gonzalez]
+> * jenkins_build: Deploy hostapp like any other block [Alex Gonzalez]
+> * jenkins_build-blocks: Separate block build release deployment [Alex Gonzalez]
+> * balena-deploy-block: Use release versioning [Alex Gonzalez]
+> * jenkins_build: Remove discontinued check [Alex Gonzalez]
+> * balena-deploy: Do not deploy discontinued device types [Alex Gonzalez]
+> * balena-deploy: Discontinued device types use meta-balena version [Alex Gonzalez]
+> * balena-deploy: Adapt balena_deploy_block to release versioning and use it [Alex Gonzalez]
+> * balena-build-block: Remove image release [Alex Gonzalez]
+> * balena-api: Use release revision for fetchers [Alex Gonzalez]
+> * jenkins_build-block: Remove release version API setter [Alex Gonzalez]
+> * balena-api: Remove release version API setter [Alex Gonzalez]
+> * balena-lib: Use release versioning [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.15.10
+> ### (2021-12-02)
+> 
+> * balena-deploy: Set leviathan networkWireless mode based on device slug [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.15.9
+> ### (2021-11-26)
+> 
+> * Substitute the worker types for generic device slugs [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.15.8
+> ### (2021-11-03)
+> 
+> * Dockerfile_yocto-build-env: Install Honister host deps [Alexandru Costache]
+> 
+> ## balena-yocto-scripts-1.15.7
+> ### (2021-10-25)
+> 
+> * jenkins_build.sh: Fix deployment for discontinued device types [Alex Gonzalez]
+> * jenkins_build.sh: Remove PRIVATE_DT as it is unused [Alex Gonzalez]
+> * jenkins_build.sh: Fix lint warnings [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.15.6
+> ### (2021-10-21)
+> 
+> * balena-generate-ami.sh: wait for boot partition when preloading AMI [Michal Toman]
+> 
+> ## balena-yocto-scripts-1.15.5
+> ### (2021-10-21)
+> 
+> * jenkins_generate_ami.sh: Use a shared directory for preloaded image [Michal Toman]
+> 
+> ## balena-yocto-scripts-1.15.4
+> ### (2021-10-20)
+> 
+> * barys: update development image variables [Mark Corbin]
+> 
+> ## balena-yocto-scripts-1.15.3
+> ### (2021-10-20)
+> 
+> * jenkins_generate_ami.sh: Preload outside of yocto cache [Michal Toman]
+> 
+> ## balena-yocto-scripts-1.15.2
+> ### (2021-10-01)
+> 
+> * balena-generate-ami.sh: correctly mount boot partition when injecting SSH key [Michal Toman]
+> 
+> ## balena-yocto-scripts-1.15.1
+> ### (2021-10-01)
+> 
+> * Update balena-cli to 12.50.1 [Michal Toman]
+> 
+> ## balena-yocto-scripts-1.15.0
+> ### (2021-10-01)
+> 
+> * jenkins_generate_ami.sh: Use lib function to get arch from config.json [Michal Toman]
+> * balena-generate-ami.sh: Look for boot partition by label rather than hardcoding p1 [Michal Toman]
+> * balena-generate-ami.sh: Fail if AMI already exists [Michal Toman]
+> * balena-generate-ami.sh: sync after writing config.json [Michal Toman]
+> * balena-generate-ami.sh: Stick to POSIX-compliant [ instead of [[ [Michal Toman]
+> * balena-generate-ami.sh: Remove useless statements [Michal Toman]
+> * jenkins_generate_ami.sh: Use architecture as suffix instead of machine name [Michal Toman]
+> * jenkins_build.sh: pass MACHINE to jenkins_generate_ami.sh [Michal Toman]
+> * AMI automation: Adjust AMI names to be compatible with AWS API [ab77]
+> * AMI automation: Correct S3 bucket name and key [ab77]
+> * AMI automation: Add a separate container for generaing AMI [Michal Toman]
+> * AMI automation: shellcheck and resolve violations [ab77]
+> * AMI automation: Use staging env by default [Tomás Tormo]
+> * AMI automation: Simplify public ssh addition. Do not use sudo [Tomás Tormo]
+> * automation: Generate and publish AMI from the raw balenaOS image [Tomás Tormo]
+> 
+</details>
+
 # v2.78.0+rev3
 ## (2021-09-29)
 
