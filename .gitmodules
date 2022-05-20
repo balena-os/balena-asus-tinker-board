@@ -16,3 +16,6 @@
 [submodule "layers/meta-tinker-board"]
 	path = layers/meta-tinker-board
 	url = https://github.com/balena-os/meta-tinker-board.git
+[submodule "contracts"]
+	path = contracts
+	url = https://github.com/balena-io/contracts.git
