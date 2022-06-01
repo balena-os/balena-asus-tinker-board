@@ -1,4 +1,147 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 8cce34e9763389eb59e4e375c532c81eb592fc1e
+      hash: f94be0ba8dead328d1af6fef81d0e3c782c2b6ad
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 8cce34e9763389eb59e4e375c532c81eb592fc1e
+        changelog-entry: Update balena-yocto-scripts to 8cce34e9763389eb59e4e375c532c81eb592fc1e
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "balena-lib: release_finalize: Do not retag phase for ESR branch patch"
+              hash: ffdcb572e75b6bddc890710a6c1e4702d08a86a7
+              body: >
+                When we patch an ESR branch, for example from v2022.1.0 to
+                v2022.1.1,
+
+                do not update the next, current, sunset ESR  phases as they remain the
+
+                same.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.19.8
+          title: "'balena-lib: release_finalize: Do not retag phase for ESR branch patch'"
+          date: 2022-06-01T11:14:12.365Z
+        - commits:
+            - subject: "balena-lib: balena_lib_release_finalize: Pass the correct arguments"
+              hash: e28b745d4ba121b639ba79dad2377f051fe5d3e2
+              body: >
+                The balena_api_fetch_fleet_tag requires a slug as first
+                argument, not
+
+                a fleet that can contain the organization too.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-lib: Tag ESR fleets with patch independent tags"
+              hash: d51ecb6d91fe6ecf91de1ecde4fff700f7f88e67
+              body: >
+                Otherwise patch updates of ESR branches move the ESR phase when
+                they
+
+                should not. For example, if 2022.1.1 is current, 2022.1.2 is also
+
+                current and should not move 2022.1.1 to sunset.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.19.7
+          title: "'balena-lib: Tag ESR fleets with patch independent tags'"
+          date: 2022-05-31T19:39:43.444Z
+        - commits:
+            - subject: "balena-lib: Check versions before finalizing"
+              hash: 0ae1389a69b857b466b4eef81396d5f1b6bc4ae6
+              body: >
+                Only allow to finalize draft releases that have matching semver
+                with
+
+                the device repository being deployed.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-deploy-block: Do not always finalise on deploy"
+              hash: 754833d6ef773b68a9eecafb426783ac70eb8767
+              body: >
+                Introduce a new final step after draft deployment to finalise
+                releases.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-deploy-block: Add OS version to contract"
+              hash: 2c692984079215c2c916c5e4df79e200486be1ff
+              body: >
+                If there is an OS contract, add the OS version we are building
+                for.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-deploy: Generate OS contract if not available"
+              hash: 2205c4de1dadafbf26f9f7b303b88c4da6d7710e
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-lib: Build contracts"
+              hash: b8c08faf2a86434793bcad67e063ade9754142ff
+              body: >
+                Add a function to build all OS contracts and return the one for
+                the
+
+                specified slug.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: Add generate-oscontract script
+              hash: 20894636355622ab0ded6b2e6a4f804f78961d99
+              body: |
+                This script generates OS contracts for all device types.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.19.6
+          title: "'Configure Renovate'"
+          date: 2022-05-24T10:16:21.892Z
+  version: 2.78.0+rev15
+  title: "'Update balena-yocto-scripts digest to 8cce34e'"
+  date: 2022-06-01T12:58:57.319Z
+- commits:
     - subject: Update contracts to 35dea15031cf273d469171f81ed24c394332caf5
       hash: cead6414825e8bf95da135c0c350b89da7640c96
       body: Update contracts

@@ -1,6 +1,36 @@
 Change log
 -----------
 
+# v2.78.0+rev15
+## (2022-06-01)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 8cce34e9763389eb59e4e375c532c81eb592fc1e [Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.19.8
+> ### (2022-06-01)
+> 
+> * balena-lib: release_finalize: Do not retag phase for ESR branch patch [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.19.7
+> ### (2022-06-01)
+> 
+> * balena-lib: balena_lib_release_finalize: Pass the correct arguments [Alex Gonzalez]
+> * balena-lib: Tag ESR fleets with patch independent tags [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.19.6
+> ### (2022-05-24)
+> 
+> * balena-lib: Check versions before finalizing [Alex Gonzalez]
+> * balena-deploy-block: Do not always finalise on deploy [Alex Gonzalez]
+> * balena-deploy-block: Add OS version to contract [Alex Gonzalez]
+> * balena-deploy: Generate OS contract if not available [Alex Gonzalez]
+> * balena-lib: Build contracts [Alex Gonzalez]
+> * Add generate-oscontract script [Alex Gonzalez]
+> 
+</details>
+
 # v2.78.0+rev14
 ## (2022-05-27)
 
