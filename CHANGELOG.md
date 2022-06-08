@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v2.78.0+rev17
+## (2022-06-07)
+
+* Add build and deploy workflow [Alex Gonzalez]
+* Update contracts to 58bcfbc0b0237177c51db2d7120e61d70e9c415b [Renovate Bot]
+
 # v2.78.0+rev16
 ## (2022-06-03)
 
