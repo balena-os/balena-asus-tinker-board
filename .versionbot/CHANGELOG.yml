@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update build and deploy workflow to support ESR tags
+      hash: e6e35de78b895a4ac23098af94158a89ee5df8da
+      body: |
+        This adds support for build and deploy of ESR tags.
+      footer:
+        Changelog-entry: Update build and deploy workflow to support ESR tags
+        changelog-entry: Update build and deploy workflow to support ESR tags
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.78.0+rev19
+  title: "'workflows: Update build and deploy to 0.0.6'"
+  date: 2022-07-13T10:36:52.592Z
+- commits:
     - subject: Update balena-yocto-scripts to 5e003d52ac8e118af3cce662362d45f780ade704
       hash: 27f0cf446ad93a99e50086ef01b76d8ccc3f6935
       body: Update balena-yocto-scripts
