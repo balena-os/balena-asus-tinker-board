@@ -1,6 +1,20 @@
 Change log
 -----------
 
+# v2.78.0+rev22
+## (2022-07-17)
+
+
+<details>
+<summary> Update contracts to 4df6bf241e40b34e4d7051c97ba4f9cf1945c45f [renovate[bot]] </summary>
+
+> ## contracts-2.0.6
+> ### (2022-07-17)
+> 
+> * hw.device-type: Add correct tdpzu9 board [Florin Sarbu]
+> 
+</details>
+
 # v2.78.0+rev21
 ## (2022-07-14)
 
