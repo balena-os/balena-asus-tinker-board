@@ -1,4 +1,38 @@
 - commits:
+    - subject: Update contracts to b48eaf24e3b0cf67116e4adbe1a12d349825fda5
+      hash: fe33794960cfad6ebd310712ce2f406b2f05f699
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to b48eaf24e3b0cf67116e4adbe1a12d349825fda5
+        changelog-entry: Update contracts to b48eaf24e3b0cf67116e4adbe1a12d349825fda5
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dotnet contract to latest v6.x and v3.x
+              hash: 8723082c3e626e277d24a6ed4e8667fc2324377a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Add node v18.7.0
+              hash: 71c4516bc9af8b65fae9f9f25ceca6e3f61eddc0
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.8
+          title: "'Few base images updates'"
+          date: 2022-08-03T00:13:19.196Z
+  version: 2.78.0+rev25
+  title: "'Update contracts digest to b48eaf2'"
+  date: 2022-08-03T00:36:06.017Z
+- commits:
     - subject: Update contracts to 9db49d2fbb34542f53bf496135c32cccf5df487c
       hash: 051750c588b235229c91f356f6b223dc27cbdb67
       body: Update contracts
