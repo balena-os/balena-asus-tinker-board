@@ -1,4 +1,37 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 99807501efffc8c5034c88361049650a02511a78
+      hash: 761c740f20a106bb280f2017e2fdccb43cfbad4c
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 99807501efffc8c5034c88361049650a02511a78
+        changelog-entry: Update balena-yocto-scripts to 99807501efffc8c5034c88361049650a02511a78
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "barys: Add balena-rust to syntax conversion step"
+              hash: 2fb2b25a2bc6c226f3d4d570a2bfb261585ed283
+              body: >
+                Recent versions of meta-balena include a balena-rust layer used
+                to
+
+                specify a distro-set Rust version across all supported Yocto versions
+
+
+                As such, the syntax of this layer also needs to be converted.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.19.12
+          title: "'barys: Add balena-rust to syntax conversion step'"
+          date: 2022-08-08T15:25:50.686Z
+  version: 2.78.0+rev30
+  title: "'Update balena-yocto-scripts digest to 9980750'"
+  date: 2022-08-19T12:10:33.348Z
+- commits:
     - subject: Update contracts to 39a79c43f1b8ab4426d7a9c1cdeb9a9514101061
       hash: 700f6b03c2f5808f40adb47724bef2bc6d1ae920
       body: Update contracts
