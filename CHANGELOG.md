@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v2.101.10
+## (2022-08-24)
+
+* Update meta-tinker-board to v0.0.02 [Alex Gonzalez]
+* Update layers/meta-balena to a1084cfc437eb601cbb9f3de7822d916e08351de [renovate[bot]]
+
 # v2.78.0+rev30
 ## (2022-08-19)
 

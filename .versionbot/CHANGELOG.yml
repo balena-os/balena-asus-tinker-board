@@ -1,4 +1,27 @@
 - commits:
+    - subject: Update meta-tinker-board to v0.0.02
+      hash: e05e831596dfe5c8ea88c35d77a0869d9a32039d
+      body: |
+        Update meta-tinker-board to v0.0.2
+      footer:
+        Changelog-entry: Update meta-tinker-board to v0.0.02
+        changelog-entry: Update meta-tinker-board to v0.0.02
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Update layers/meta-balena to a1084cfc437eb601cbb9f3de7822d916e08351de
+      hash: c2c28e69c86637306dec716c76f82bb083e2b140
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to a1084cfc437eb601cbb9f3de7822d916e08351de
+        changelog-entry: Update layers/meta-balena to a1084cfc437eb601cbb9f3de7822d916e08351de
+      author: renovate[bot]
+      nested: []
+  version: 2.101.10
+  title: "'Update layers/meta-balena digest to a1084cf'"
+  date: 2022-08-24T08:24:41.786Z
+- commits:
     - subject: Update balena-yocto-scripts to 99807501efffc8c5034c88361049650a02511a78
       hash: 761c740f20a106bb280f2017e2fdccb43cfbad4c
       body: Update balena-yocto-scripts
