@@ -1,4 +1,37 @@
 - commits:
+    - subject: Update contracts to 766eb7591fe2b2f2cbc36af68d58627057f38193
+      hash: 7aca593761bafcb6b69d50f4a1f63e9fc63d2884
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 766eb7591fe2b2f2cbc36af68d58627057f38193
+        changelog-entry: Update contracts to 766eb7591fe2b2f2cbc36af68d58627057f38193
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: Add node v18.9.1, v16.17.1 and v14.20.1
+              hash: 3d17a04da87495bc26f6aaabb4e90baaa8f0a349
+              body: ""
+              footer:
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Add Golang v1.19.1 and v1.18.6
+              hash: 1f985fb82514dbeb8c9cddaa66efc8eb31ab9a30
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.17
+          title: "'Few base images updates'"
+          date: 2022-09-27T20:03:39.091Z
+  version: 2.101.11+rev3
+  title: "'Update contracts digest to 766eb75'"
+  date: 2022-09-28T00:18:23.084Z
+- commits:
     - subject: Update contracts to f2ace726406411ac4202d114ec8264a1a2c7af97
       hash: 66b42b5b85e529f6ba1cfdc1062a41a6db7cccc0
       body: Update contracts
