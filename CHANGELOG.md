@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v2.101.11+rev4
+## (2022-10-15)
+
+* Switch from balenaCI to flowzone [Alex Gonzalez]
+* Update contracts to f9e017074a7d7e26f5b56642fa86d2533f349f33 [renovate[bot]]
+
 # v2.101.11+rev3
 ## (2022-09-28)
 
