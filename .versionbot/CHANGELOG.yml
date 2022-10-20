@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to 38de093f2a5afdb1948b295ba11a18b6ebe626e9
+      hash: 3f3c46e542ef32627a1e11f01aaacd1fef4a309c
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 38de093f2a5afdb1948b295ba11a18b6ebe626e9
+        changelog-entry: Update contracts to 38de093f2a5afdb1948b295ba11a18b6ebe626e9
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: Add node v19.0.0
+              hash: 2b5239255d31f2d33c808a6149064f1861b8a07f
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.21
+          title: ""
+          date: 2022-10-20T12:03:45.573Z
+  version: 2.101.11+rev7
+  title: ""
+  date: 2022-10-20T18:01:03.716Z
+- commits:
     - subject: Update contracts to c3c52f437e92083b261800ec64ee87115a1d8b43
       hash: d75f2a46ecc374969b81cf5fba4d1d69fcce31ff
       body: Update contracts
