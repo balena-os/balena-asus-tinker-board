@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to 67fb73772ae7ecfb93109e9e42e8b33465a61ec0
+      hash: 326483cc9e0766bb1d8b6bfdda7e396d4fb7c333
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 67fb73772ae7ecfb93109e9e42e8b33465a61ec0
+        changelog-entry: Update contracts to 67fb73772ae7ecfb93109e9e42e8b33465a61ec0
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "hw+device-type: Add jetson-agx-orin-devkit device type"
+              hash: 9b5a7433a5965ed3152a63b9cab756e9cc68c015
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.22
+          title: ""
+          date: 2022-10-24T14:57:49.013Z
+  version: 2.101.11+rev9
+  title: ""
+  date: 2022-10-24T19:17:12.542Z
+- commits:
     - subject: Update balena-yocto-scripts to 7c5b9c44fbd4039c3387c8b74e8efae8fa9f37d6
       hash: cf589d3a57f1eb133bea60459c61cbf4b4d6c9f5
       body: Update balena-yocto-scripts
