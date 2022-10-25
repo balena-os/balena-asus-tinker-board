@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update contracts to c311e6f8a9832587b3bb687b22a92574b790c688
+      hash: 8d9b288391fa61238fb2a96ea136ccc6b06b2a02
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to c311e6f8a9832587b3bb687b22a92574b790c688
+        changelog-entry: Update contracts to c311e6f8a9832587b3bb687b22a92574b790c688
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "sw.os+hw.device-type: Add distro-config.tpl for
+                jetson-agx-orin-devkit"
+              hash: 76dfd72bece570ec8fdf96006135603d2e81b699
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.23
+          title: ""
+          date: 2022-10-25T15:58:44.499Z
+  version: 2.101.11+rev10
+  title: ""
+  date: 2022-10-25T23:27:44.433Z
+- commits:
     - subject: Update contracts to 67fb73772ae7ecfb93109e9e42e8b33465a61ec0
       hash: 326483cc9e0766bb1d8b6bfdda7e396d4fb7c333
       body: Update contracts
