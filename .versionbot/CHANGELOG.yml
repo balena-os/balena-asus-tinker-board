@@ -1,4 +1,47 @@
 - commits:
+    - subject: Update layers/meta-balena to 4b2fb9d832801f84f90147ec2a5b3fba56cd194e
+      hash: 0109adbe0426e4c1062e973532bc59e9e10c7ac4
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 4b2fb9d832801f84f90147ec2a5b3fba56cd194e
+        changelog-entry: Update layers/meta-balena to 4b2fb9d832801f84f90147ec2a5b3fba56cd194e
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: Refactor and clean up the purge data tests
+              hash: 65b0e02ec72ab1b68448f9546e5e5c570b1fe01a
+              body: |
+                Clean up some duplicated code and avoid test comments
+                that to not write to logs when called but instead await
+                the next test command.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-2.107.16
+          title: ""
+          date: 2022-12-01T23:40:57.700Z
+        - commits:
+            - subject: Updated CBS Docs Updated link to the CDS Product Repo
+              hash: 8513275e98d0fec277c0b4dd98acc20fa90812f7
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Hampton (@rhampt) <rhampt@balena.io>
+                signed-off-by: Ryan Hampton (@rhampt) <rhampt@balena.io>
+              author: Ryan H
+              nested: []
+          version: meta-balena-2.107.15
+          title: ""
+          date: 2022-12-01T16:39:52.944Z
+  version: 2.107.16
+  title: ""
+  date: 2022-12-02T03:37:28.590Z
+- commits:
     - subject: Update layers/meta-balena to 8ea20f929eeb3f52b23874c3bd951c961329ad29
       hash: 8a61469933e6335af754cbb7f765915595d7dea6
       body: Update layers/meta-balena
