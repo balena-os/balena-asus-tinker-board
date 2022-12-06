@@ -1,6 +1,39 @@
 Change log
 -----------
 
+# v2.107.19
+## (2022-12-06)
+
+
+<details>
+<summary> Update layers/meta-balena to a2287559a0625ca82d362981105353eddcb627ec [renovate[bot]] </summary>
+
+> ## meta-balena-2.107.19
+> ### (2022-12-06)
+> 
+> * image_types_balena: generate bmap file [Joseph Kogut]
+> * flasher: write disk image skipping sparse blocks [Joseph Kogut]
+> * image_types_balena: create sparse disk image [Joseph Kogut]
+> 
+> ## meta-balena-2.107.18
+> ### (2022-12-04)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to fe4d6a1 [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.10.9
+>> #### (2022-12-02)
+>> 
+>> * Revert "docker-compose: stop using the default docker bridge" [Kyle Harding]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v2.107.17
 ## (2022-12-02)
 
