@@ -1,4 +1,47 @@
 - commits:
+    - subject: Update layers/meta-balena to 867c3a93cf533c63fc57703d08f3b3d2af554746
+      hash: 49a015262da2b5cbb38ac20d58486c408053b348
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 867c3a93cf533c63fc57703d08f3b3d2af554746
+        changelog-entry: Update layers/meta-balena to 867c3a93cf533c63fc57703d08f3b3d2af554746
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "kernel-balena: enable zstd compression"
+              hash: 0473815cdf1210936b2110bdafb5294ae527db50
+              body: >
+                Enabling CONFIG_KERNEL_ZSTD=y improves the compression ratio compared
+
+                to gzip while being faster to decompress. With kernel 5.15 in balenaOS
+
+                v2.105, we see the 24 MB kernel compress to approximately 19 MB.
+
+
+                Zstd support was added in commit 48f7ddf, first introduced in kernel
+
+                v5.9. Enable this config unconditionally in supported kernels.
+
+
+                Note that not every architecture and device support this option, but in
+
+                those cases, Kconfig will automatically disable it as HAVE_ZSTD is also
+
+                missing.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.107.20
+          title: ""
+          date: 2022-12-07T22:06:34.638Z
+  version: 2.107.20
+  title: ""
+  date: 2022-12-08T04:47:10.888Z
+- commits:
     - subject: Update layers/meta-balena to a2287559a0625ca82d362981105353eddcb627ec
       hash: 23e99da927ad533b45c9b767039f439d0b660881
       body: Update layers/meta-balena
