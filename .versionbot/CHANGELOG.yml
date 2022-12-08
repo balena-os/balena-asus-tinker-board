@@ -1,4 +1,41 @@
 - commits:
+    - subject: Update layers/meta-balena to be29271a011eec9121d17db5be03824ff78163cd
+      hash: f454598c6eb4ebf3df976b3d26b9e614c74e7005
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to be29271a011eec9121d17db5be03824ff78163cd
+        changelog-entry: Update layers/meta-balena to be29271a011eec9121d17db5be03824ff78163cd
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests/connectivity: Run the proxy tests with the actual redsocks uid
+                of the DUT"
+              hash: 17b49075804ea85aadfbb20d557025c1a4c2ee4f
+              body: >
+                Not all the boards we support have the redsocks uid as 995 in their rootfs
+                so let's
+
+                fetch the actual redsocks uid from the DUT before running the proxy tests and
+
+                update that in the docker-compose.yml. We do so because the REDSOCKS_UID value
+
+                isn't substituted in the compose if the variable, even if it is passed trough
+
+                the cli.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-2.107.21
+          title: ""
+          date: 2022-12-08T10:39:40.903Z
+  version: 2.107.21
+  title: ""
+  date: 2022-12-08T18:16:34.294Z
+- commits:
     - subject: Update layers/meta-balena to 867c3a93cf533c63fc57703d08f3b3d2af554746
       hash: 49a015262da2b5cbb38ac20d58486c408053b348
       body: Update layers/meta-balena
