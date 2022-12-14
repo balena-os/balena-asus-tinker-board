@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update layers/meta-balena to 9811fd442944eca14af2c590bb4dde64949f09b7
+      hash: 1aa8947869b8e32684aba0c00730c58651dc8608
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 9811fd442944eca14af2c590bb4dde64949f09b7
+        changelog-entry: Update layers/meta-balena to 9811fd442944eca14af2c590bb4dde64949f09b7
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: hup: clean up inactive partition pre hup"
+              hash: 1356c4f244be8b67fac9da9e15d2dee8c3816611
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.107.33
+          title: ""
+          date: 2022-12-14T13:22:43.735Z
+  version: 2.107.33
+  title: ""
+  date: 2022-12-14T16:03:56.242Z
+- commits:
     - subject: Update layers/meta-balena to 6dd2fc68bc13b2d8ad4527a1623da292828ed1c9
       hash: f6569f34a4247767a2ce27e8f8b8e10237c4da9b
       body: Update layers/meta-balena
