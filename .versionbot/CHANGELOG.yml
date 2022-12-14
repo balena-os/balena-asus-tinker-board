@@ -1,4 +1,43 @@
 - commits:
+    - subject: Update layers/meta-balena to 47c8a998af71d0285ba0029aea1aa145fdc2a4b4
+      hash: 13a4424ca9ce39fba5e8f8e5f9d196d47376fcd4
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 47c8a998af71d0285ba0029aea1aa145fdc2a4b4
+        changelog-entry: Update layers/meta-balena to 47c8a998af71d0285ba0029aea1aa145fdc2a4b4
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "initrdscripts: Wait for udev processing to complete when unlocking
+                LUKS devices"
+              hash: dc31885048db9a1ef5e1aaa705af9bf3d04052a3
+              body: >
+                When unlocking LUKS devices, udev events initializing the DM devices are
+                still
+
+                generated in the background even after cryptsetup luksOpen returns. We need to
+
+                wait for the udev processing to finish before killing udev and cleaning up
+
+                the udev database to avoid having to deal with partially initialized devices
+
+                or corrupted udev database in the target OS.
+              footer:
+                Fixes: "#2857"
+                fixes: "#2857"
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-2.107.34
+          title: ""
+          date: 2022-12-14T18:02:58.755Z
+  version: 2.107.34
+  title: ""
+  date: 2022-12-14T20:04:34.795Z
+- commits:
     - subject: Update layers/meta-balena to 9811fd442944eca14af2c590bb4dde64949f09b7
       hash: 1aa8947869b8e32684aba0c00730c58651dc8608
       body: Update layers/meta-balena
