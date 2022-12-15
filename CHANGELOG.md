@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v2.107.35
+## (2022-12-15)
+
+
+<details>
+<summary> Update layers/meta-balena to 6bba8a6b779d93ad1765708ca6704db90ec81769 [renovate[bot]] </summary>
+
+> ## meta-balena-2.107.35
+> ### (2022-12-15)
+> 
+> * patch: Add default debug object to test config [Vipul Gupta (@vipulgupta2048)]
+> 
+
+</details>
+
 # v2.107.34
 ## (2022-12-14)
 

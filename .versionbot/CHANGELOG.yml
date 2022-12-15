@@ -1,4 +1,28 @@
 - commits:
+    - subject: Update layers/meta-balena to 6bba8a6b779d93ad1765708ca6704db90ec81769
+      hash: 2ed83b60095d91e9606b1ea8d4b7219280bbea9c
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 6bba8a6b779d93ad1765708ca6704db90ec81769
+        changelog-entry: Update layers/meta-balena to 6bba8a6b779d93ad1765708ca6704db90ec81769
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "patch: Add default debug object to test config"
+              hash: 3def4d69a63952eac4a5c3fb6bd94fe03b666eda
+              body: ""
+              footer:
+                Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
+                signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
+              author: Vipul Gupta (@vipulgupta2048)
+              nested: []
+          version: meta-balena-2.107.35
+          title: ""
+          date: 2022-12-15T00:03:58.037Z
+  version: 2.107.35
+  title: ""
+  date: 2022-12-15T02:05:09.296Z
+- commits:
     - subject: Update layers/meta-balena to 47c8a998af71d0285ba0029aea1aa145fdc2a4b4
       hash: 13a4424ca9ce39fba5e8f8e5f9d196d47376fcd4
       body: Update layers/meta-balena
