@@ -1,4 +1,50 @@
 - commits:
+    - subject: Update layers/meta-balena to fad0927777fe491bb531261b1ea53e1fdd4a00a1
+      hash: 0543cd97b97b0b3cd9f0b319882df82d413e12e2
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to fad0927777fe491bb531261b1ea53e1fdd4a00a1
+        changelog-entry: Update layers/meta-balena to fad0927777fe491bb531261b1ea53e1fdd4a00a1
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: Update tests/leviathan digest to 48ffd13
+              hash: 71f0b808ee097643b9ea6f8572fb30b9e8c7e0c7
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: renovate[bot]
+              nested:
+                - commits:
+                    - subject: Avoid conflicting docker networks
+                      hash: 5e04208a9f07567c6aa7fdc55dc95d2cacb6c8c3
+                      body: >
+                        The `make subnet` command can be called on Jenkins and similar to generate
+
+                        a unique subnet that is not in use.
+
+
+                        The DinD daemon in the core service will also start with a non-default
+
+                        subnet.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: leviathan-2.10.11
+                  title: ""
+                  date: 2022-12-14T14:15:43.765Z
+          version: meta-balena-2.107.36
+          title: ""
+          date: 2022-12-15T06:04:52.294Z
+  version: 2.107.36
+  title: ""
+  date: 2022-12-15T08:06:28.241Z
+- commits:
     - subject: Update layers/meta-balena to 6bba8a6b779d93ad1765708ca6704db90ec81769
       hash: 2ed83b60095d91e9606b1ea8d4b7219280bbea9c
       body: Update layers/meta-balena
