@@ -1,6 +1,33 @@
 Change log
 -----------
 
+# v2.107.39+rev3
+## (2022-12-22)
+
+
+<details>
+<summary> Update contracts to 4698e4ef55fdc61aa3df8d8494f2cbbd306b26c9 [renovate[bot]] </summary>
+
+> ## contracts-2.0.36
+> ### (2022-12-22)
+> 
+> * Fix owa5x slug [Trong Nghia Nguyen]
+> 
+
+</details>
+
+
+<details>
+<summary> Update contracts to b65d5bd372587d4aaabba526d34f67c3f63ea90b [renovate[bot]] </summary>
+
+> ## contracts-2.0.36
+> ### (2022-12-22)
+> 
+> * Fix owa5x slug [Trong Nghia Nguyen]
+> 
+
+</details>
+
 # v2.107.39+rev2
 ## (2022-12-16)
 
