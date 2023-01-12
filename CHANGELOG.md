@@ -1,6 +1,262 @@
 Change log
 -----------
 
+# v2.108.20
+## (2023-01-12)
+
+
+<details>
+<summary> Update layers/meta-balena to a51263dd4f93063f67ba4402db483f0b09a83a53 [renovate[bot]] </summary>
+
+> ## meta-balena-2.108.20
+> ### (2023-01-12)
+> 
+> * workflows: meta-balena-esr: Fix version calculation [Alex Gonzalez]
+> 
+> ## meta-balena-2.108.19
+> ### (2023-01-10)
+> 
+> * redsocks: Increase maximum number of open files [Alex Gonzalez]
+> 
+> ## meta-balena-2.108.18
+> ### (2023-01-09)
+> 
+> * Revert "flasher: output logs to serial console" [Joseph Kogut]
+> 
+> ## meta-balena-2.108.17
+> ### (2023-01-09)
+> 
+> * Update balena-os/balena-supervisor to v14.4.10 [renovate[bot]]
+> 
+> ## meta-balena-2.108.16
+> ### (2023-01-09)
+> 
+> * balena-supervisor: Set the supervisor package version [Kyle Harding]
+> 
+> ## meta-balena-2.108.15
+> ### (2023-01-05)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to e23c1bb [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.14.8
+>> #### (2023-01-05)
+>> 
+>> * chore(deps): update dependency eslint-config-standard to 17.0.0 [renovate[bot]]
+>> 
+>> ### leviathan-2.14.7
+>> #### (2023-01-05)
+>> 
+>> * worker: Deprecate the WORKER_RELEASE env var [Kyle Harding]
+>> 
+>> ### leviathan-2.14.6
+>> #### (2023-01-05)
+>> 
+>> * e2e: Switch from rpi4 to rpi3 for e2e tests [Kyle Harding]
+>> * core: Increase the default timeout for worker connections to 30s [Kyle Harding]
+>> 
+>> ### leviathan-2.14.5
+>> #### (2023-01-04)
+>> 
+>> * renovate: Disable automerge for major and minor updates [Kyle Harding]
+>> 
+>> ### leviathan-2.14.4
+>> #### (2023-01-04)
+>> 
+>> * chore(deps): update dependency typedoc to 0.23.23 [renovate[bot]]
+>> 
+> </details>
+> 
+> 
+> ## meta-balena-2.108.14
+> ### (2023-01-04)
+> 
+> * tests: os: chrony: disable NTP w/ dnsmasq dbus API [Joseph Kogut]
+> 
+> ## meta-balena-2.108.13
+> ### (2023-01-04)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 44dceb4 [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.14.3
+>> #### (2023-01-04)
+>> 
+>> * chore(deps): update dependency eslint to 8.31.0 [renovate[bot]]
+>> 
+> </details>
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 4383482 [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.14.3
+>> #### (2023-01-04)
+>> 
+>> * chore(deps): update dependency eslint to 8.31.0 [renovate[bot]]
+>> 
+> </details>
+> 
+> 
+> ## meta-balena-2.108.12
+> ### (2023-01-04)
+> 
+> * tests/hup: Avoid an old engine bug when pulling multiarch images on rpi [Kyle Harding]
+> 
+> ## meta-balena-2.108.11
+> ### (2023-01-03)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to d3485ab [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.13.0
+>> #### (2023-01-03)
+>> 
+>> * Revert "minor: Add @balena/leviathan-test-helpers package" [Kyle Harding]
+>> 
+>> ### leviathan-2.12.4
+>> #### (Invalid date)
+>> 
+>> * chore(deps): update dependency eslint-plugin-standard to 4.1.0 [renovate[bot]]
+>> 
+> </details>
+> 
+> 
+> ## meta-balena-2.108.10
+> ### (Invalid date)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 7d6326d [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.12.3
+>> #### (Invalid date)
+>> 
+>> * chore(deps): update dependency eslint-plugin-node to 11.1.0 [renovate[bot]]
+>> 
+>> ### leviathan-2.12.2
+>> #### (2022-12-29)
+>> 
+>> * Run out-of-band e2e tests after Flowzone passes [Kyle Harding]
+>> 
+>> ### leviathan-2.12.1
+>> #### (2022-12-29)
+>> 
+>> * chore(deps): update dependency eslint-plugin-jsdoc to 39.6.4 [renovate[bot]]
+>> 
+>> ### leviathan-2.12.0
+>> #### (2022-12-29)
+>> 
+>> * chore(deps): update core/contracts digest to 4698e4e [renovate[bot]]
+>> 
+>> ### leviathan-2.11.9
+>> #### (2022-12-29)
+>> 
+>> * chore(deps): update dependency balena-os/leviathan-worker to 2.6.13 [renovate[bot]]
+>> 
+> </details>
+> 
+> 
+> ## meta-balena-2.108.9
+> ### (2022-12-29)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 1dcb432 [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.11.8
+>> #### (2022-12-28)
+>> 
+>> * chore(deps): update dependency eslint-config-prettier to 8.5.0 [renovate[bot]]
+>> 
+> </details>
+> 
+> 
+> ## meta-balena-2.108.8
+> ### (2022-12-28)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to e09fae4 [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.11.7
+>> #### (2022-12-28)
+>> 
+>> * renovate: Remove v prefix from leviathan-worker github-tags [Kyle Harding]
+>> 
+> </details>
+> 
+> 
+> ## meta-balena-2.108.7
+> ### (2022-12-28)
+> 
+> * tests: os: fix modem test teardown [rcooke-warwick]
+> 
+> ## meta-balena-2.108.6
+> ### (2022-12-27)
+> 
+> * flasher: output logs to serial console [Joseph Kogut]
+> 
+> ## meta-balena-2.108.5
+> ### (2022-12-21)
+> 
+> * Engine healthcheck: deal with empty uuid file [Leandro Motta Barros]
+> 
+> ## meta-balena-2.108.4
+> ### (2022-12-20)
+> 
+> * distro: For OS development, enable serial console [Alex Gonzalez]
+> 
+> ## meta-balena-2.108.3
+> ### (2022-12-20)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to f06d285 [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.11.6
+>> #### (2022-12-16)
+>> 
+>> * Fix renovate extends syntax to include balena-io config [Kyle Harding]
+>> 
+>> ### leviathan-2.11.5
+>> #### (2022-12-16)
+>> 
+>> * renovate: Inherit settings from balena-io/renovate-config [Kyle Harding]
+>> 
+>> ### leviathan-2.11.4
+>> #### (2022-12-16)
+>> 
+>> * add logging and timeout to balena push [rcooke-warwick]
+>> 
+> </details>
+> 
+> 
+> ## meta-balena-2.108.2
+> ### (2022-12-19)
+> 
+> * Update balena-os/balena-supervisor to v14.4.9 [renovate[bot]]
+> 
+> ## meta-balena-2.108.1
+> ### (2022-12-18)
+> 
+> * common: signing: improve debug output on failure [Joseph Kogut]
+> 
+> ## meta-balena-2.108.0
+> ### (2022-12-16)
+> 
+> * Update NetworkManager to 1.40.4 [Zahari Petkov]
+> 
+> ## meta-balena-2.107.40
+> ### (2022-12-16)
+> 
+> * Add upstream resolvconf 1.91 recipe for kirkstone [Zahari Petkov]
+> 
+</details>
+
 # v2.107.39+rev7
 ## (2023-01-09)
 
