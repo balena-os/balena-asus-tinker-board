@@ -1,6 +1,26 @@
 Change log
 -----------
 
+# v2.115.7+rev11
+## (2023-08-22)
+
+
+<details>
+<summary> Update contracts to 10b9852d5826601854c35be13555647ca65bdb54 [Self-hosted Renovate Bot] </summary>
+
+> ## contracts-2.0.69
+> ### (2023-08-22)
+> 
+> * Remove Ubuntu Impish and Kinetic and add Lunar [Kyle Harding]
+> 
+> ## contracts-2.0.68
+> ### (2023-08-15)
+> 
+> * iot-gate-imx8plus: Improve provisioning instructions for Windows [Alexandru Costache]
+> 
+
+</details>
+
 # v2.115.7+rev10
 ## (2023-08-10)
 
